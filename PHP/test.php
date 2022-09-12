@@ -1,2 +1,2 @@
-<?php
-ajuub gay ass nigga
+
+ajuub is een real ass nigga
