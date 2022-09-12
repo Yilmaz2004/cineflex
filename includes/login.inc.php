@@ -5,9 +5,6 @@ if (isset($_SESSION['melding'])) {
 }
 ?>
 
-
-
-
 <head>
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
@@ -28,8 +25,14 @@ if (isset($_SESSION['melding'])) {
             <label for="password" class="form-label">Password:</label>
             <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-outline-dark btn-lg px-5">Login</button>
+        <button class="btn btn-outline-dark btn-lg px-5"
+                onclick="window.location.href='index.php?page=register'" type="submit">sign up
+        </button>
+
     </form>
+
+
 </div>
 
 </body>
