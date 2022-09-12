@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../../private/connection.php';
+include '../../private/conn.php';
 
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -20,12 +20,12 @@ if ($query->rowCount() == 1 ) {
     elseif ($result['role'] == "admin") {
         $_SESSION['role'] = "admin";
         $_SESSION['userid'] = $result['userid'];
-        header('location: ../index.php?page=addworker');
+        header('location: ../index.php?page=homepage');
     }
     elseif ($result['role'] == "customer") {
         $_SESSION['role'] = "customer";
         $_SESSION['userid'] = $result['userid'];
-        header('location: ../index.php?page=register');
+        header('location: ../index.php?page=homepage');
     }
 
 }else{
