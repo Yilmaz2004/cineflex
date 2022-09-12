@@ -6,16 +6,16 @@
     <form action="php/addworker.php" method="POST" enctype="multipart/form-data">
         <div class="mb-3 mt-3">
             <label>Name:</label>
-            <input type="text" class="form-control" placeholder="Enter name" name="name">
+            <input type="text" class="form-control" placeholder="Enter name" name="firstname">
         </div>
         <div class="mb-3 mt-3">
             <label>Email:</label>
-            <input type="text" class="form-control" placeholder="Enter description" name="description">
+            <input type="text" class="form-control" placeholder="Enter email" name="email">
         </div>
 
         <div class="mb-3 mt-3">
             <label>Password:</label>
-            <input type="text" class="form-control" placeholder="Enter Password" name="Password">
+            <input type="password" class="form-control" placeholder="Enter Password" name="password">
         </div>
         <button name="submit" type="submit" class="btn btn-success">Add</button>
     </form>
