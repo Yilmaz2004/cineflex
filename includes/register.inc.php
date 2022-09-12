@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-    <title>My Buddy</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-
-
-</head>
 
 <body>
 <div class="container mt-3">
