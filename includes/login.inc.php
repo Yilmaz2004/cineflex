@@ -1,5 +1,5 @@
 <head>
-    <title>My Buddy</title>
+    <title></title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -11,7 +11,7 @@
 <body>
 <div class="container mt-3">
     <h2><Login></Login></h2>
-    <form action="php/addgroup.php" method="POST" enctype="multipart/form-data">
+    <form action="#" method="POST" enctype="multipart/form-data">
         <div class="mb-3 mt-3">
             <label>Name:</label>
             <input type="text" class="form-control" placeholder="Enter name" name="name">
