@@ -1,17 +1,35 @@
+<?php
+if (isset($_SESSION['melding'])) {
+    echo '<p style = "color:red;">' . $_SESSION['melding'] . '</p>';
+    unset($_SESSION['melding']);
+}
+?>
 
+
+
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 <body>
+
 <div class="container mt-3">
-    <h2>Login</h2>
-    <form action="#" method="POST" enctype="multipart/form-data">
+    <h3>Login</h3>
+    <form method="post" action="PHP/login.php" class="was-validated">
         <div class="mb-3 mt-3">
-            <label>Email:</label>
-            <input type="Email" class="form-control" placeholder="Enter Email" name="Email">
+            <label for="email" class="form-label">email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
         </div>
-        <div class="mb-3 mt-3">
-            <label>Description:</label>
-            <input type="Password" class="form-control" placeholder="Enter Password" name="Password">
+        <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
         </div>
-        <button name="submit" type="submit" class="btn btn-success">Login</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
+
 </body>

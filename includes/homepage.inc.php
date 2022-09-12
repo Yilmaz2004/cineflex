@@ -10,13 +10,6 @@
     <h1>Cineflex</h1>
 </div>
 
-<div class="topnav">
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="login.inc.php" style="float:right">Login</a>
-</div>
-
 <div class="row">
     <div class="leftcolumn">
         <div class="card">
@@ -59,12 +52,8 @@
         </div>
     </div>
 </div>
-
 <div class="footer">
     <h2>Footer</h2>
 </div>
-
-
 </body>
-
 </html>
