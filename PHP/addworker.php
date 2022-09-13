@@ -24,10 +24,12 @@ if ($stmt->rowCount() == 0) {
     $stmt->bindParam(':role', $role);
     $stmt->execute();
 }else{
-    $emailused=true;
+    !$emailused;
     $_SESSION['melding'] = 'This email is not available.';
     header('location: ../index.php?page=addworker ');
-}
+}if($emailused){
     header('location: ../index.php?page=workersview ');
+}
+
 
 ?>
