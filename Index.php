@@ -6,7 +6,7 @@ if (isset($_GET['page'])) {
     $page='homepage';
 }
 ?>
-i
+
 
 <!doctype html>     
 <html lang="en">
