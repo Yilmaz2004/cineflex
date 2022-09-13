@@ -6,14 +6,16 @@ $firstname = $_POST['firstname'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 $role = 'worker';
-$emailused= false;
 
-$sql = 'SELECT userid FROM user where email = :email ';
+
+$sql = 'SELECT userid, email FROM user where email = :email ';
 $stmt = $conn->prepare($sql);
 $stmt->bindParam(':email', $email);
 $stmt->execute();
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if ($stmt->rowCount() == 0) {
+
 
 
     $stmt = $conn->prepare("INSERT INTO user  (firstname, email,password,role)
@@ -23,13 +25,14 @@ if ($stmt->rowCount() == 0) {
     $stmt->bindParam(':password', $password);
     $stmt->bindParam(':role', $role);
     $stmt->execute();
-}else{
-    !$emailused;
+    header('location: ../index.php?page=workersview ');
+}else {
+
     $_SESSION['melding'] = 'This email is not available.';
     header('location: ../index.php?page=addworker ');
-}if($emailused){
-    header('location: ../index.php?page=workersview ');
 }
+
+
 
 
 ?>

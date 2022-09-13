@@ -30,8 +30,8 @@
         <div class="card">
             <h2>Gasten met een beperking</h2>
             <div>
-            <img id="myImg" src="viewpoint/Foto 2.jpg"  class="fakeimg" style=" width:550px; height:400px;" alt="kassa" >
-            <img id="myImg" src="viewpoint/Foto 5.jpg"  class="fakeimg" style=" width:550px; height:400px;" alt="kassa" >
+            <img id="myImg" src="viewpoint/Foto 2.jpg"  class="fakeimg" style=" width:500px; height:400px;" alt="kassa" >
+            <img id="myImg" src="viewpoint/Foto 5.jpg"  class="fakeimg" style=" width:500px; height:400px;" alt="kassa" >
             </div>
             <p>Alle twee de zalen zijn toegankelijk voor mindervaliden en de plaatsen zijn zowel telefonisch als online te reserveren. Tevens is er een mindervalidentoilet aanwezig. In de zaal kunnen twee fauteuils verwijderd worden van de achterste rij zodat er plaats ontstaat voor één of twee rolstoelen.
                 Mensen met een visuele beperking kunnen in onze bioscoop gebruik maken van de app EarCatch. Deze app kan op uw eigen smartphone geïnstalleerd worden en biedt audiodescriptie voor bepaalde films.
@@ -58,9 +58,7 @@
     </div>
 </div>
 
-<div class="footer">
-    <h2>Footer</h2>
-</div>
+
 
 
 </body>

@@ -4,6 +4,7 @@ include '../private/conn.php';
 ?>
 
 <div class="topnav">
+    <a class="nav-link active" href=index.php?page=homepage>Homepage</a>
     <a class="nav-link active" href=index.php?page=>Planning</a>
     <?php if (isset($_SESSION['userid'])){?>
 
@@ -15,7 +16,7 @@ include '../private/conn.php';
             <a href="php/logout.php" style="float:right">Log uit</a>
         <?php }
         if ($_SESSION['role'] == 'worker') {?>
-
+            <a class="nav-link active" href=index.php?page=viewfilms>Film Overview</a>
             <a href="php/logout.php" style="float:right">Log uit</a>
         <?php }
         elseif ($_SESSION['role'] == 'customer') {?>
@@ -27,3 +28,5 @@ include '../private/conn.php';
     <?php }?>
 
 </div>
+
+
