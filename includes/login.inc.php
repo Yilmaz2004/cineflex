@@ -27,7 +27,7 @@ if (isset($_SESSION['melding'])) {
         </div>
         <button type="submit" class="btn btn-outline-dark btn-lg px-5">Login</button>
         <button class="btn btn-outline-dark btn-lg px-5"
-                onclick="window.location.href='index.php?page=register'" type="submit">sign up
+                onclick="window.location.href='index.php?page=register'" type="button">sign up
         </button>
 
     </form>
