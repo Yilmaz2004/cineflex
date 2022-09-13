@@ -1,4 +1,8 @@
-
+<?php
+if (isset($_SESSION['melding'])) {
+echo '<p style = "color:red;">' . $_SESSION['melding'] . '</p>';
+unset($_SESSION['melding']);
+} ?>
 
 <body>
 <div class="container mt-3">

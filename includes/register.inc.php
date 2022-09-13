@@ -57,7 +57,7 @@
 
         <div class="mb-3 mt-3">
             <label>Password:</label>
-            <input type="text" class="form-control" placeholder="Enter password" name="password" required>
+            <input type="password" class="form-control" placeholder="Enter password" name="password" required>
         </div>
         <button name="submit" type="submit" class="btn btn-success">Register</button>
     </form>
