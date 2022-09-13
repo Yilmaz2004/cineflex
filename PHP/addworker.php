@@ -27,7 +27,7 @@ if ($stmt->rowCount() == 0) {
     $emailused=true;
     $_SESSION['melding'] = 'This email is not available.';
     header('location: ../index.php?page=addworker ');
-}if($emailused = false){
-    header('location: ../index.php?page=workersview ');
 }
+    header('location: ../index.php?page=workersview ');
+
 ?>
