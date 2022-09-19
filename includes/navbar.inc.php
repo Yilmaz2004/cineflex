@@ -1,6 +1,12 @@
 <?php
 include '../private/conn.php';
-
+$userid = $_SESSION['userid'];
+$sql = "SELECT firstname
+        FROM user
+        WHERE userid = $userid";
+$stmt = $conn->prepare($sql);
+$stmt->execute();
+$row = $stmt->fetch(PDO::FETCH_ASSOC)
 ?>
 
 <div class="topnav">
@@ -20,10 +26,11 @@ include '../private/conn.php';
             <a href="php/logout.php" style="float:right">Log uit</a>
         <?php }
         elseif ($_SESSION['role'] == 'customer') {?>
-
+            <a href="index.php?page=profile" style="float:right">Welkom <?=$row['firstname']?></a>
             <a href="php/logout.php" style="float:right">Log uit</a>
         <?php }}
     else {?>
+
         <a  href=index.php?page=login style="float:right">Log in</a>
     <?php }?>
 

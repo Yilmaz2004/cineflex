@@ -35,6 +35,7 @@ $stmt->execute();
 
 
 $_SESSION['userid'] = $conn->lastInsertId();
+$_SESSION['role'] = $role;
 
 header('location: ../index.php?page=homepage');
 
