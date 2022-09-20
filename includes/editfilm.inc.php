@@ -10,40 +10,40 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC)
 ?>
 <body>
 <div class="container mt-3">
-    <h2>Edit A Worker</h2>
+    <h2>Edit film</h2>
     <form action="php/editfilm.php" method="POST" enctype="multipart/form-data">
         <div class="mb-3 mt-3">
-            <label>Name:</label>
+            <label>Title:</label>
             <input type="text" class="form-control" placeholder="Enter name" value="<?= $row['title'] ?>" name="title">
         </div>
         <div class="mb-3 mt-3">
-            <label>Email:</label>
+            <label>Description:</label>
             <input type="text" class="form-control" placeholder="Enter email" value="<?= $row['description'] ?>"
                    name="description">
         </div>
 
         <div class="mb-3 mt-3">
-            <label>password:</label>
+            <label>Language:</label>
             <input type="text" class="form-control" placeholder="Enter password" value="<?= $row['language'] ?>"
                    name="language">
         </div>
         <div class="mb-3 mt-3">
-            <label>Name:</label>
+            <label>Genre:</label>
             <input type="text" class="form-control" placeholder="Enter name" value="<?= $row['genre'] ?>" name="genre">
         </div>
         <div class="mb-3 mt-3">
-            <label>Email:</label>
+            <label>Viewpoint:</label>
             <input type="file" class="form-control" placeholder="Enter email" value="<?= $row['viewpoint'] ?>"
                    name="viewpoint">
         </div>
 
         <div class="mb-3 mt-3">
-            <label>password:</label>
+            <label>Picture:</label>
             <input type="file" class="form-control" placeholder="Enter password" value="<?= $row['picture'] ?>"
                    name="picture">
         </div>
         <input type="hidden" name="moviesid" value="<?= $moviesid ?>">
-        <button name="submit" type="submit" class="btn btn-success">Update</button>
+        <button name="submit" type="submit" class="btn btn-success">Save changes</button>
     </form>
 </div>
 </body>
