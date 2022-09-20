@@ -17,7 +17,6 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 if ($stmt->rowCount() == 0) {
 
 
-
     $stmt = $conn->prepare("INSERT INTO user  (firstname, email,password,role)
                         VALUES(:firstname, :email,:password,:role)");
     $stmt->bindParam(':firstname', $firstname);
@@ -26,13 +25,11 @@ if ($stmt->rowCount() == 0) {
     $stmt->bindParam(':role', $role);
     $stmt->execute();
     header('location: ../index.php?page=workersview ');
-}else {
+} else {
 
     $_SESSION['melding'] = 'This email is not available.';
     header('location: ../index.php?page=addworker ');
 }
-
-
 
 
 ?>

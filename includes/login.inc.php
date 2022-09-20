@@ -23,7 +23,8 @@ if (isset($_SESSION['melding'])) {
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Password:</label>
-            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password"
+                   required>
         </div>
         <button type="submit" class="btn btn-outline-dark btn-lg px-5">Login</button>
         <button class="btn btn-outline-dark btn-lg px-5"

@@ -1,0 +1,50 @@
+<body>
+<div class="container mt-3">
+    <h2>Add a film</h2>
+    <form action="php/addfilm.php" method="POST" enctype="multipart/form-data">
+
+
+        <div class="mb-3 mt-3">
+            <label>Picture:</label>
+            <input type="file" class="form-control" placeholder="Naam" name="picture">
+        </div>
+
+
+        <div class="mb-3 mt-3">
+            <label>Title:</label>
+            <input type="text" class="form-control" placeholder="Title:" name="title">
+        </div>
+
+
+        <div class="mb-3 mt-3">
+            <label>Description:</label>
+            <input type="text" class="form-control" placeholder="Description:" name="description">
+        </div>
+
+
+        <div class="mb-3 mt-3">
+            <label>Length:</label>
+            <input type="text" class="form-control" placeholder="Length" name="length">
+        </div>
+
+
+        <div class="mb-3 mt-3">
+            <label>Language:</label>
+            <input type="text" class="form-control" placeholder="Language:" name="language">
+        </div>
+
+
+        <div class="mb-3 mt-3">
+            <label>Genre:</label>
+            <input type="text" class="form-control" placeholder="Genre:" name="genre">
+        </div>
+
+
+        <div class="mb-3 mt-3">
+            <label>Viewpoint:</label>
+            <input type="file" class="form-control" placeholder="Viewpoint:" name="viewpoint">
+        </div>
+        <button name="submit" type="submit" class="btn btn-success">Add film</button>
+    </form>
+</div>
+</body>

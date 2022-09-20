@@ -16,7 +16,6 @@ $password = $_POST['password'];
 $role = 'customer';
 
 
-
 $stmt = $conn->prepare("insert into user (firstname, middlename,lastname,street,place,zipcode,housenumber,number,dob,email,password, role)
                                                    values(:firstname, :middlename, :lastname,:street,:place,:zipcode,:housenumber,:number,:dob,:email,:password,:role)");
 $stmt->bindParam(':firstname', $firstname);

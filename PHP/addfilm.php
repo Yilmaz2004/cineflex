@@ -1,15 +1,16 @@
 <?php
-session_start();
 include '../../private/conn.php';
 
-$moviesid = $_POST['moviesid'];
+session_start();
+
+$userid = $_SESSION['userid'];
+
 
 $title = $_POST['title'];
 $description = $_POST['description'];
+$length = $_POST['length'];
 $language = $_POST['language'];
 $genre = $_POST['genre'];
-$viewpoint = $_POST['viewpoint'];
-$picture = $_POST['picture'];
 
 
 $picture = "picture/" . basename($_FILES["picture"]["name"]);
@@ -47,16 +48,15 @@ if (isset($_POST["submit"])) {
     } else {
         if (move_uploaded_file($_FILES["picture"]["tmp_name"], $target_file)) {
             echo "The file " . htmlspecialchars(basename($_FILES["picture"]["name"])) . " has been uploaded.";
-            $stmt = $conn->prepare("UPDATE movies  SET title = :title, description = :description, language = :language, genre = :genre, viewpoint = :viewpoint, picture = :picture WHERE moviesid = :moviesid ");
+            $stmt = $conn->prepare("INSERT INTO movies  (title,description,length,language,genre,viewpoint,picture)
+                        VALUES(:title, :description,:length,:language,:genre,:viewpoint,:picture)");
             $stmt->bindParam(':title', $title);
             $stmt->bindParam(':description', $description);
+            $stmt->bindParam(':length', $length);
             $stmt->bindParam(':language', $language);
             $stmt->bindParam(':genre', $genre);
             $stmt->bindParam(':viewpoint', $viewpoint);
             $stmt->bindParam(':picture', $picture);
-            $stmt->bindParam(':moviesid', $moviesid);
-
-
             $stmt->execute();
 
         } else {
@@ -65,6 +65,6 @@ if (isset($_POST["submit"])) {
     }
 }
 
+header('location: ../index.php?page=groups');
 
-header('location: ../index.php?page=viewfilms');
-?><?php
+?>
