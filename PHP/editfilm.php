@@ -13,12 +13,13 @@ $picture = $_POST['picture'];
 
 
 $picture = "picture/" . basename($_FILES["picture"]["name"]);
-$viewpoint = "picture/" . basename($_FILES["viewpoint"]["name"]);
+$viewpoint = "viewpoint/" . basename($_FILES["viewpoint"]["name"]);
 
 
 $target_dir = "../picture/";
+$target_dir2 = "../viewpoint/";
 $target_file = $target_dir . basename($_FILES["picture"]["name"]);
-$target_file2 = $target_dir . basename($_FILES["viewpoint"]["name"]);
+$target_file2 = $target_dir2 . basename($_FILES["viewpoint"]["name"]);
 
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
