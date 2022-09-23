@@ -4,7 +4,7 @@ include '../private/conn.php';
 
 <div class="topnav">
     <a class="nav-link active" href=index.php?page=homepage>Homepage</a>
-    <a class="nav-link active" href=index.php?page=>Planning</a>
+    <a class="nav-link active" href=index.php?page=planning>Planning</a>
     <?php if (isset($_SESSION['userid'])) {
         $userid = $_SESSION['userid'];
         $sql = "SELECT firstname

@@ -68,12 +68,12 @@
         </div>
         <div class="card">
             <h3>Popular Post</h3>
-            <img src="viewpoint/Foto 7.jpg" class="fakeimg" style=" width:350px; height:300px;">
-            <img src="viewpoint/Foto 6.jpg" class="fakeimg" style=" width:350px; height:300px;">
+            <img src="viewpoint/Foto 7.jpg" class="fakeimg" style=" width:320px; height:300px;">
+            <img src="viewpoint/Foto 6.jpg" class="fakeimg" style=" width:320px; height:300px;">
         </div>
         <div class="card">
             <h2>Persoonlijke aandacht</h2>
-            <img src="viewpoint/Foto 3.jpg" class="fakeimg" style=" width:350px; height:300px;">
+            <img src="viewpoint/Foto 3.jpg" class="fakeimg" style=" width:320px; height:300px;">
             <p>Gasten kunnen rekenen op persoonlijke aandacht. Deze benadering wordt wellicht eerder tijdens een luxe
                 cruise verwacht dan in een bioscoop. Bij aankomst in de zaal wordt men persoonlijk naar de ruime
                 fauteuils begeleid en wordt de uitgebreide menukaart overhandigd. Tijdens de voorstelling kan er met een
