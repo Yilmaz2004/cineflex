@@ -5,7 +5,7 @@ include '../../private/conn.php';
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-$sql = "SELECT role, userid FROM user WHERE email= :email AND password = :password";
+$sql = "SELECT role, userid FROM user WHERE email = :email AND password = :password";
 $query = $conn->prepare($sql);
 $query->bindParam(':email', $email);
 $query->bindParam(':password', $password);
