@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html xml:lang="nl" lang="nl">
+<head>
+    
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://img.youtube.com">
+
+    <title>Kijkwijzer</title>        <meta name="description" content="Kijkwijzer informeert ouders en opvoeders tot welke leeftijd een tv-programma, serie of film schadelijk kan zijn voor kinderen." />
+
+    
+    <meta property="og:url" content="/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="nl_NL" />
+    <meta name="twitter:card" content="summary" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/Assets/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Assets/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Assets/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/Assets/Favicon/webmanifest.json">
+    <link rel="mask-icon" href="/Assets/Favicon/safari-pinned-tab.svg" color="#3164f7">
+    
+    <meta name="msapplication-TileColor" content="#3164f7">
+    <meta name="theme-color" content="#3164f7">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>var Perplex=Perplex||{};Perplex.Ready=function(){function i(i){t?i():n.push(i)}function r(){for(var i=0;i<n.length;i++)n[i]();t=!0}function u(n){arguments.length===0?r():i(n)}var t=!1,n=[];return u}()</script>
+    <!-- Google Tag Manager -->
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
+    })(window, document, 'script', 'dataLayer', 'GTM-5M2H55D');</script>
+
+<!-- End Google Tag Manager -->
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-24918951-1', 'auto');
+        ga('set', 'dimension1', 'homepage');
+        ga('set', 'forceSSL', true);
+        ga('set', 'anonymizeIp', true);
+        ga('require', 'linkid', 'linkid.js');
+        ga('send', 'pageview');
+    </script>
+
+    <link href="/bundles/css?v=oGj-udoMMGjBONwsu9NQbuii_VISnRuicgJHGHF4aww1" rel="stylesheet"/>
+
+</head>
+<body tabindex="-1">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M2H55D"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <a href="#skip-content" class="skip-link">Direct naar inhoud</a>
+    <nav class="l-grid__container c-topbar__container js-topbar-parent">
+    <div class="l-grid__content l-grid__content--small">
+        <div class="l-grid__grid">
+            <div class="l-grid__col l-grid__col--1-1">
+                <div class="c-topbar__items animate animate-parent fade-in">
+                    <button type="button" class="c-topbar__item reset-btn" data-toggle="nav">
+                        <svg class="c-topbar__icon"><use xlink:href="/Assets/Icons/icons.svg#nav"></use></svg>
+                        <span class="vh">Navigatie</span>
+                    </button>
+                    <a href="/" class="c-topbar__item">
+                        <svg class="c-topbar__logo"><use xlink:href="/Assets/Icons/icons.svg#logo"></use></svg>
+                        <span class="vh">Kijkwijzer</span>
+                    </a>
+                    <button type="button" class="c-topbar__item reset-btn" data-toggle="search">
+                        <svg class="c-topbar__icon"><use xlink:href="/Assets/Icons/icons.svg#search"></use></svg>
+                        <span class="vh">Zoeken</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <header class="l-grid__container c-header__container">
+    <div class="l-grid__content c-header__content c-header__content--home">
+        <div class="l-grid__grid">
+            <div class="l-grid__col l-grid__col--1-1">
+                <div class="l-grid__item l-grid__item--small c-header__text">
+                        <h1 class="l-type__heading l-type__heading--h1 c-header__title animate fade-in" data-delay="400">Kijkwijzer</h1>
+
+                    <p>Kijkwijzer informeert tot welke leeftijd beelden schadelijk kunnen zijn voor kinderen.</p>
+<p><a href="/over-kijkwijzer/" title="Over Kijkwijzer" class="btn">Ontdek hoe Kijkwijzer werkt</a></p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<picture class="c-header__picture animate fade-in l-image__parent--landscape l-image__parent"><source media="(min-width: 1560px)" srcset="/media/xtdfp4hp/pexels-ksenia-chernaya-4740522.jpg?center=0.5438%2c0.5790&amp;mode=crop&amp;width=1920&amp;height=1280&amp;quality=80&amp;token=KhL1eTnqqO" /><source media="(min-width: 1280px)" srcset="/media/xtdfp4hp/pexels-ksenia-chernaya-4740522.jpg?center=0.5438%2c0.5790&amp;mode=crop&amp;width=1560&amp;height=1040&amp;quality=80&amp;token=rKOvYPpWHp" /><source media="(min-width: 768px)" srcset="/media/xtdfp4hp/pexels-ksenia-chernaya-4740522.jpg?center=0.5438%2c0.5790&amp;mode=crop&amp;width=1280&amp;height=854&amp;quality=80&amp;token=8zXqt%2fNliN" /><img alt="" class="c-header__image l-image__item--loaded l-image__item" height="480" src="/media/xtdfp4hp/pexels-ksenia-chernaya-4740522.jpg?center=0.5438%2c0.5790&amp;mode=crop&amp;width=800&amp;height=534&amp;quality=80&amp;token=AFrPPbeqIJ" title="" width="800" /></picture>
+        <div class="c-header__marks c-header__marks--home js-marks-item animate animate-parent zoom-in">
+                <button type="button" class="c-header__mark c-header__mark--home c-header__mark--spacing reset-btn" data-link="alle-leeftijden">
+                    <svg class="c-header__icon"><use xlink:href="/Assets/Icons/icons.svg#alle-leeftijden"></use></svg>
+                    <span class="vh">Alle leeftijden</span>
+                </button>
+                <button type="button" class="c-header__mark c-header__mark--home c-header__mark--spacing reset-btn" data-link="leeftijd-6">
+                    <svg class="c-header__icon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-6"></use></svg>
+                    <span class="vh">Alle leeftijden</span>
+                </button>
+                <button type="button" class="c-header__mark c-header__mark--home c-header__mark--spacing reset-btn" data-link="leeftijd-9">
+                    <svg class="c-header__icon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-9"></use></svg>
+                    <span class="vh">Alle leeftijden</span>
+                </button>
+                <button type="button" class="c-header__mark c-header__mark--home c-header__mark--spacing reset-btn" data-link="leeftijd-12">
+                    <svg class="c-header__icon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-12"></use></svg>
+                    <span class="vh">Alle leeftijden</span>
+                </button>
+                <button type="button" class="c-header__mark c-header__mark--home c-header__mark--spacing reset-btn" data-link="leeftijd-14">
+                    <svg class="c-header__icon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-14"></use></svg>
+                    <span class="vh">Alle leeftijden</span>
+                </button>
+                <button type="button" class="c-header__mark c-header__mark--home c-header__mark--spacing reset-btn" data-link="leeftijd-16">
+                    <svg class="c-header__icon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-16"></use></svg>
+                    <span class="vh">Alle leeftijden</span>
+                </button>
+                <button type="button" class="c-header__mark c-header__mark--home c-header__mark--spacing reset-btn" data-link="leeftijd-18">
+                    <svg class="c-header__icon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-18"></use></svg>
+                    <span class="vh">Alle leeftijden</span>
+                </button>
+                <button type="button" class="c-header__mark c-header__mark--home c-header__mark--spacing reset-btn" data-link="geweld">
+                    <svg class="c-header__icon"><use xlink:href="/Assets/Icons/icons.svg#geweld"></use></svg>
+                    <span class="vh">Alle leeftijden</span>
+                </button>
+                <button type="button" class="c-header__mark c-header__mark--home c-header__mark--spacing reset-btn" data-link="angst">
+                    <svg class="c-header__icon"><use xlink:href="/Assets/Icons/icons.svg#angst"></use></svg>
+                    <span class="vh">Alle leeftijden</span>
+                </button>
+                <button type="button" class="c-header__mark c-header__mark--home c-header__mark--spacing reset-btn" data-link="seks">
+                    <svg class="c-header__icon"><use xlink:href="/Assets/Icons/icons.svg#seks"></use></svg>
+                    <span class="vh">Alle leeftijden</span>
+                </button>
+                <button type="button" class="c-header__mark c-header__mark--home c-header__mark--spacing reset-btn" data-link="grof-taalgebruik">
+                    <svg class="c-header__icon"><use xlink:href="/Assets/Icons/icons.svg#grof-taalgebruik"></use></svg>
+                    <span class="vh">Alle leeftijden</span>
+                </button>
+                <button type="button" class="c-header__mark c-header__mark--home c-header__mark--spacing reset-btn" data-link="discriminatie">
+                    <svg class="c-header__icon"><use xlink:href="/Assets/Icons/icons.svg#discriminatie"></use></svg>
+                    <span class="vh">Alle leeftijden</span>
+                </button>
+                <button type="button" class="c-header__mark c-header__mark--home c-header__mark--spacing reset-btn" data-link="drugs">
+                    <svg class="c-header__icon"><use xlink:href="/Assets/Icons/icons.svg#drugs"></use></svg>
+                    <span class="vh">Alle leeftijden</span>
+                </button>
+        </div>
+</header>
+
+
+    <main id="skip-content" class="l-grid__container" tabindex="-1">
+        
+
+    <div class="l-grid__content">
+        <div class="l-grid__grid">
+            <div class="l-grid__col l-grid__col--1-1">
+                <div class="c-news__items">
+                        <article class="c-news__item">
+<picture class="c-news__picture animate fade-in l-image__parent--square l-image__parent"><source media="(min-width: 0)" srcset="/media/bctpqk41/special-media-awards_esther-meijer-fotografie.jpg?anchor=center&amp;mode=crop&amp;width=480&amp;height=480&amp;quality=80&amp;token=vBLSCM%2f5i4" /><img alt="" class="c-news__image l-image__item--loaded l-image__item" height="480" src="/media/bctpqk41/special-media-awards_esther-meijer-fotografie.jpg?anchor=center&amp;mode=crop&amp;width=480&amp;height=480&amp;quality=80&amp;token=vBLSCM%2f5i4" title="" width="480" /></picture>
+                            <div class="c-news__wrapper l-grid__item l-grid__item--small animate animate-parent slide-in">
+                                <h2 class="l-type__heading l-type__heading--h3 c-news__title">Special Media Awards zoekt mediamakers voor prijsuitreiking</h2>
+                                <div class="c-news__content l-grid__item l-grid__item--small">
+                                    <div class="c-news__text"><p>De Special Media Awards is een wedstrijd voor mensen met een verstandelijke beperking die media maken. De uitreiking is op donderdag 10 november 2022 bij Beeld &amp; Geluid in Hilversum. Kevin van den Berg, Irene Moors en Roel Imfeld presenteren de Special Media Awards.</p>
+<p>Vanaf nu kun je jouw mediawerk inzenden. Je hebt hier een maand lang de tijd voor. Van 9 september tot 9 oktober.</p></div>
+                                    <span class="reset-btn c-news__more">
+                                        <svg class="c-news__icon"><use xlink:href="/Assets/Icons/icons.svg#next"></use></svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="/nieuws/special-media-awards-zoekt-mediamakers-voor-prijsuitreiking/" class="c-news__link">Special Media Awards zoekt mediamakers voor prijsuitreiking</a>
+                        </article>
+                        <article class="c-news__item">
+<picture class="c-news__picture animate fade-in l-image__parent--square l-image__parent"><source media="(min-width: 0)" srcset="/media/2zwftren/feature-img-juli-2022.png?anchor=center&amp;mode=crop&amp;width=480&amp;height=480&amp;quality=80&amp;token=UMq8cypPGt" /><img alt="" class="c-news__image l-image__item--loaded l-image__item" height="480" src="/media/2zwftren/feature-img-juli-2022.png?anchor=center&amp;mode=crop&amp;width=480&amp;height=480&amp;quality=80&amp;token=UMq8cypPGt" title="" width="480" /></picture>
+                            <div class="c-news__wrapper l-grid__item l-grid__item--small animate animate-parent slide-in">
+                                <h2 class="l-type__heading l-type__heading--h3 c-news__title">Kijkwijzer internationaal vergeleken </h2>
+                                <div class="c-news__content l-grid__item l-grid__item--small">
+                                    <div class="c-news__text"><p>Een paar keer per jaar vergelijkt Kijkwijzer verschillende internationale leeftijdsadviezen. Hoe verschillen de leeftijden in Nederland, Duitsland, Frankrijk en andere Europese landen?</p></div>
+                                    <span class="reset-btn c-news__more">
+                                        <svg class="c-news__icon"><use xlink:href="/Assets/Icons/icons.svg#next"></use></svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="/nieuws/kijkwijzer-internationaal-vergeleken-juli-2022/" class="c-news__link">Kijkwijzer internationaal vergeleken </a>
+                        </article>
+                                            <a href="/nieuws/" class="btn btn--link c-news__btn animate fade-in">Nieuws</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="l-grid__content l-grid__content--wide c-serie__block js-tabs-parent">
+        <div class="l-grid__grid c-serie__grid">
+            <div class="l-grid__col l-grid__col--1-1">
+                <div class="l-grid__item">
+                    <div class="c-serie__top l-grid__item l-grid__item--small animate animate-parent fade-in">
+                        <h2 class="l-type__heading l-type__heading--h2 c-serie__heading c-serie__heading--alt">Populaire titels</h2>
+                        <div class="c-serie__tabs">
+                                    <button type="button" data-tab="films" class="reset-btn c-serie__tab">Films</button>
+                                    <button type="button" data-tab="series" class="reset-btn c-serie__tab">Series</button>
+                                    <button type="button" data-tab="games" class="reset-btn c-serie__tab">Games</button>
+                        </div>
+                    </div>
+                    <div class="c-serie__parent">
+                                <div class="c-serie__items animate animate-parent slide-in" data-panel="films">
+                                    
+
+<div class="c-serie__item">
+    <div class="c-serie__wrapper l-grid__item l-grid__item--small">
+        <div class="c-serie__cover">
+                <picture class="c-serie__picture">
+                    <img width="252" height="375" loading="lazy" class="c-serie__image" src="/media/k5znyvpj/top-gun_-maverick_ps_1_jpg_sd-high_copyright-2019-paramount-pictures-corporation-all-rights-reserved.jpg?width=260&amp;quality=80&amp;token=yIB7fe6RON" alt="TOP GUN: MAVERICK">
+                </picture>
+                            <div class="c-serie__mark c-serie__mark--large">
+                    <svg class="c-serie__icon c-serie__icon--large"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-12"></use></svg>
+                </div>
+        </div>
+        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="c-serie__title">TOP GUN: MAVERICK</h3>
+            <p class="c-serie__desc">
+                Speelfilm
+(2022)            </p>
+                <div class="c-serie__marks">
+                        <div class="c-serie__mark c-serie__mark--leeftijd-12">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-12"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--geweld">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#geweld"></use></svg>
+                        </div>
+                </div>
+        </div>
+        <a href="/films/top-gun-maverick/" class="c-serie__link">TOP GUN: MAVERICK</a>
+    </div>
+</div>
+<div class="c-serie__item">
+    <div class="c-serie__wrapper l-grid__item l-grid__item--small">
+        <div class="c-serie__cover">
+                <picture class="c-serie__picture">
+                    <img width="252" height="375" loading="lazy" class="c-serie__image" src="/media/n1xhtxcg/doctor-strange-in-the-multiverse-of-madness_ps_1_jpg_sd-high_copyright-marvel-studios-2022-all-rights-reserved.jpg?width=260&amp;quality=80&amp;token=RVQaiOxPsh" alt="Doctor Strange In The Multiverse Of Madness">
+                </picture>
+                            <div class="c-serie__mark c-serie__mark--large">
+                    <svg class="c-serie__icon c-serie__icon--large"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-14"></use></svg>
+                </div>
+        </div>
+        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="c-serie__title">Doctor Strange In The Multiverse Of Madness</h3>
+            <p class="c-serie__desc">
+                Speelfilm
+(2022)            </p>
+                <div class="c-serie__marks">
+                        <div class="c-serie__mark c-serie__mark--leeftijd-14">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-14"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--angst">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#angst"></use></svg>
+                        </div>
+                </div>
+        </div>
+        <a href="/films/doctor-strange-in-the-multiverse-of-madness/" class="c-serie__link">Doctor Strange In The Multiverse Of Madness</a>
+    </div>
+</div>
+<div class="c-serie__item">
+    <div class="c-serie__wrapper l-grid__item l-grid__item--small">
+        <div class="c-serie__cover">
+                <picture class="c-serie__picture">
+                    <img width="252" height="375" loading="lazy" class="c-serie__image" src="/media/cnuppqwy/jurassic-world_-dominion_ps_1_jpg_sd-high_copyright-2021-universal-studios-and-storyteller-distribution-lcc-all-rights-reserved.jpg?width=260&amp;quality=80&amp;token=pCI5Q68KVO" alt="JURASSIC WORLD: DOMINION">
+                </picture>
+                            <div class="c-serie__mark c-serie__mark--large">
+                    <svg class="c-serie__icon c-serie__icon--large"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-12"></use></svg>
+                </div>
+        </div>
+        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="c-serie__title">JURASSIC WORLD: DOMINION</h3>
+            <p class="c-serie__desc">
+                Speelfilm
+(2022)            </p>
+                <div class="c-serie__marks">
+                        <div class="c-serie__mark c-serie__mark--leeftijd-12">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-12"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--geweld">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#geweld"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--angst">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#angst"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--grof-taalgebruik">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#grof-taalgebruik"></use></svg>
+                        </div>
+                </div>
+        </div>
+        <a href="/films/jurassic-world-dominion-8/" class="c-serie__link">JURASSIC WORLD: DOMINION</a>
+    </div>
+</div>
+<div class="c-serie__item">
+    <div class="c-serie__wrapper l-grid__item l-grid__item--small">
+        <div class="c-serie__cover">
+                <picture class="c-serie__picture">
+                    <img width="252" height="375" loading="lazy" class="c-serie__image" src="/media/zaxb03pm/bon-bini-holland-3_ps_1_jpg_sd-high_copyright-2021-ww-entertainment.jpg?width=260&amp;quality=80&amp;token=u0wzwLluIo" alt="Bon Bini Holland 3">
+                </picture>
+                            <div class="c-serie__mark c-serie__mark--large">
+                    <svg class="c-serie__icon c-serie__icon--large"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-9"></use></svg>
+                </div>
+        </div>
+        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="c-serie__title">Bon Bini Holland 3</h3>
+            <p class="c-serie__desc">
+                Speelfilm
+(2021)            </p>
+                <div class="c-serie__marks">
+                        <div class="c-serie__mark c-serie__mark--leeftijd-9">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-9"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--angst">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#angst"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--grof-taalgebruik">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#grof-taalgebruik"></use></svg>
+                        </div>
+                </div>
+        </div>
+        <a href="/films/bon-bini-holland-3/" class="c-serie__link">Bon Bini Holland 3</a>
+    </div>
+</div>
+
+                                </div>
+                                <div class="c-serie__items animate animate-parent slide-in" data-panel="series">
+                                    
+
+<div class="c-serie__item">
+    <div class="c-serie__wrapper l-grid__item l-grid__item--small">
+        <div class="c-serie__cover">
+                <picture class="c-serie__picture">
+                    <img width="252" height="375" loading="lazy" class="c-serie__image" src="/media/idujt2xw/1539770_sexeducation3.jpg?width=260&amp;quality=80&amp;token=FcyNi%2bqcbS" alt="Sex Education: Season 3">
+                </picture>
+                            <div class="c-serie__mark c-serie__mark--large">
+                    <svg class="c-serie__icon c-serie__icon--large"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-16"></use></svg>
+                </div>
+        </div>
+        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="c-serie__title">Sex Education: Season 3</h3>
+            <p class="c-serie__desc">
+                Serie
+(2021)            </p>
+                <div class="c-serie__marks">
+                        <div class="c-serie__mark c-serie__mark--leeftijd-16">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-16"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--grof-taalgebruik">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#grof-taalgebruik"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--drugs">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#drugs"></use></svg>
+                        </div>
+                </div>
+        </div>
+        <a href="/series/sex-education-season-3/" class="c-serie__link">Sex Education: Season 3</a>
+    </div>
+</div>
+<div class="c-serie__item">
+    <div class="c-serie__wrapper l-grid__item l-grid__item--small">
+        <div class="c-serie__cover">
+                <picture class="c-serie__picture">
+                    <img width="252" height="375" loading="lazy" class="c-serie__image" src="/media/flsnrcsp/strangerthings4_netflix.jpg?width=260&amp;quality=80&amp;token=Ubool6t6VA" alt="Stranger Things 4">
+                </picture>
+                            <div class="c-serie__mark c-serie__mark--large">
+                    <svg class="c-serie__icon c-serie__icon--large"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-16"></use></svg>
+                </div>
+        </div>
+        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="c-serie__title">Stranger Things 4</h3>
+            <p class="c-serie__desc">
+                Serie
+(2022)            </p>
+                <div class="c-serie__marks">
+                        <div class="c-serie__mark c-serie__mark--leeftijd-16">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-16"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--geweld">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#geweld"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--angst">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#angst"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--grof-taalgebruik">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#grof-taalgebruik"></use></svg>
+                        </div>
+                </div>
+        </div>
+        <a href="/series/stranger-things-4/" class="c-serie__link">Stranger Things 4</a>
+    </div>
+</div>
+<div class="c-serie__item">
+    <div class="c-serie__wrapper l-grid__item l-grid__item--small">
+        <div class="c-serie__cover">
+                <picture class="c-serie__picture">
+                    <img width="252" height="375" loading="lazy" class="c-serie__image" src="/media/hrnl0rf5/ms-marvel_s1.jpg?width=260&amp;quality=80&amp;token=ZHNPAy%2fMXp" alt="Ms. Marvel (Season 1)">
+                </picture>
+                            <div class="c-serie__mark c-serie__mark--large">
+                    <svg class="c-serie__icon c-serie__icon--large"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-12"></use></svg>
+                </div>
+        </div>
+        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="c-serie__title">Ms. Marvel (Season 1)</h3>
+            <p class="c-serie__desc">
+                Serie
+(2022)            </p>
+                <div class="c-serie__marks">
+                        <div class="c-serie__mark c-serie__mark--leeftijd-12">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-12"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--geweld">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#geweld"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--grof-taalgebruik">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#grof-taalgebruik"></use></svg>
+                        </div>
+                </div>
+        </div>
+        <a href="/series/ms-marvel-season-1/" class="c-serie__link">Ms. Marvel (Season 1)</a>
+    </div>
+</div>
+<div class="c-serie__item">
+    <div class="c-serie__wrapper l-grid__item l-grid__item--small">
+        <div class="c-serie__cover">
+                <picture class="c-serie__picture">
+                    <img width="252" height="375" loading="lazy" class="c-serie__image" src="/media/1ibahrsf/1537794_sexlife1_netflix.jpg?width=260&amp;quality=80&amp;token=%2brAZWQ9%2f7u" alt="Sex/Life: Season 1">
+                </picture>
+                            <div class="c-serie__mark c-serie__mark--large">
+                    <svg class="c-serie__icon c-serie__icon--large"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-16"></use></svg>
+                </div>
+        </div>
+        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="c-serie__title">Sex/Life: Season 1</h3>
+            <p class="c-serie__desc">
+                Serie
+(2021)            </p>
+                <div class="c-serie__marks">
+                        <div class="c-serie__mark c-serie__mark--leeftijd-16">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-16"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--seks">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#seks"></use></svg>
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--grof-taalgebruik">
+                            <svg class="c-serie__icon"><use xlink:href="/Assets/Icons/icons.svg#grof-taalgebruik"></use></svg>
+                        </div>
+                </div>
+        </div>
+        <a href="/series/sex-life-season-1/" class="c-serie__link">Sex/Life: Season 1</a>
+    </div>
+</div>
+
+                                </div>
+                                <div class="c-serie__items animate animate-parent slide-in" data-panel="games">
+                                    
+
+<div class="c-serie__item">
+    <div class="c-serie__wrapper l-grid__item l-grid__item--small">
+        <div class="c-serie__cover">
+                <div class="c-serie__picture c-serie__picture--fallback">
+                    <img class="c-serie__image" src="/Assets/Images/placeholder-cover.png" alt="">
+                </div>
+                            <div class="c-serie__mark c-serie__mark--large c-serie__mark--square">
+                    <img class="c-serie__icon c-serie__icon--large" src="/Assets/Icons/PEGI/12.svg">
+                </div>
+        </div>
+        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="c-serie__title">Poppy Playtime Chapter 1</h3>
+                            <div class="c-serie__marks">
+                        <div class="c-serie__mark c-serie__mark--square c-serie__mark--12">
+                            <img class="c-serie__icon" src="/Assets/Icons/PEGI/12.svg">
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--square c-serie__mark--violence">
+                            <img class="c-serie__icon" src="/Assets/Icons/PEGI/violence.svg">
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--square c-serie__mark--fear">
+                            <img class="c-serie__icon" src="/Assets/Icons/PEGI/fear.svg">
+                        </div>
+                </div>
+        </div>
+        <a href="/games/poppy-playtime-chapter-1/" class="c-serie__link">Poppy Playtime Chapter 1</a>
+    </div>
+</div>
+<div class="c-serie__item">
+    <div class="c-serie__wrapper l-grid__item l-grid__item--small">
+        <div class="c-serie__cover">
+                <div class="c-serie__picture c-serie__picture--fallback">
+                    <img class="c-serie__image" src="/Assets/Images/placeholder-cover.png" alt="">
+                </div>
+                    </div>
+        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="c-serie__title"></h3>
+                    </div>
+        <a href="/games/roblox/" class="c-serie__link"></a>
+    </div>
+</div>
+<div class="c-serie__item">
+    <div class="c-serie__wrapper l-grid__item l-grid__item--small">
+        <div class="c-serie__cover">
+                <div class="c-serie__picture c-serie__picture--fallback">
+                    <img class="c-serie__image" src="/Assets/Images/placeholder-cover.png" alt="">
+                </div>
+                            <div class="c-serie__mark c-serie__mark--large c-serie__mark--square">
+                    <img class="c-serie__icon c-serie__icon--large" src="/Assets/Icons/PEGI/12.svg">
+                </div>
+        </div>
+        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="c-serie__title">Fortnite</h3>
+                <p class="c-serie__desc">Shooter, Third-Person Shooter, Team-Based</p>
+                            <div class="c-serie__marks">
+                        <div class="c-serie__mark c-serie__mark--square c-serie__mark--violence">
+                            <img class="c-serie__icon" src="/Assets/Icons/PEGI/violence.svg">
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--square c-serie__mark--12">
+                            <img class="c-serie__icon" src="/Assets/Icons/PEGI/12.svg">
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--square c-serie__mark--in-game_purchases">
+                            <img class="c-serie__icon" src="/Assets/Icons/PEGI/in-game_purchases.svg">
+                        </div>
+                </div>
+        </div>
+        <a href="/games/fortnite/" class="c-serie__link">Fortnite</a>
+    </div>
+</div>
+<div class="c-serie__item">
+    <div class="c-serie__wrapper l-grid__item l-grid__item--small">
+        <div class="c-serie__cover">
+<picture class="c-serie__picture l-image__parent"><source media="(min-width: 0)" srcset="/media/uomnovbo/elden-ring.jpg?width=252&amp;height=375&amp;quality=80&amp;token=SwsBWkAVm3" /><img alt="" class="c-serie__image l-image__item--lazy l-image__item" data-src="/media/uomnovbo/elden-ring.jpg?width=252&amp;height=375&amp;quality=80&amp;token=SwsBWkAVm3" title="" /></picture>                            <div class="c-serie__mark c-serie__mark--large c-serie__mark--square">
+                    <img class="c-serie__icon c-serie__icon--large" src="/Assets/Icons/PEGI/16.svg">
+                </div>
+        </div>
+        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="c-serie__title">ELDEN RING</h3>
+                <p class="c-serie__desc">Action RPG, Action-Adventure, Dark Fantasy, Open World</p>
+                            <div class="c-serie__marks">
+                        <div class="c-serie__mark c-serie__mark--square c-serie__mark--violence">
+                            <img class="c-serie__icon" src="/Assets/Icons/PEGI/violence.svg">
+                        </div>
+                        <div class="c-serie__mark c-serie__mark--square c-serie__mark--16">
+                            <img class="c-serie__icon" src="/Assets/Icons/PEGI/16.svg">
+                        </div>
+                </div>
+        </div>
+        <a href="/games/elden-ring/" class="c-serie__link">ELDEN RING</a>
+    </div>
+</div>
+
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="l-grid__content l-grid__content--wide">
+    <div class="l-grid__grid">
+        <div class="l-grid__col l-grid__col--1-1">
+            <div class="l-grid__item">
+                    <h2 class="l-type__heading l-type__heading--h2 c-highlight__title animate fade-in">Kennisdossiers</h2>
+                <div class="c-highlight__items">
+
+                        <div class="c-highlight__item">
+                            <div class="c-highlight__wrapper">
+<picture class="c-highlight__picture l-image__parent--landscape l-image__parent"><source media="(min-width: 768px)" srcset="/media/jfhhqxdv/pexels-anthony-139038.jpg?anchor=center&amp;mode=crop&amp;width=640&amp;height=427&amp;quality=80&amp;token=eIzWc%2bCaBT" /><img alt="" class="c-highlight__image l-image__item--loaded l-image__item" height="480" loading="lazy" src="/media/jfhhqxdv/pexels-anthony-139038.jpg?anchor=center&amp;mode=crop&amp;width=480&amp;height=320&amp;quality=80&amp;token=Z6G%2fHmuGqS" title="" width="800" /></picture>
+                                <div class="l-grid__item l-grid__item--tiny c-highlight__content c-highlight__content--kennis">
+                                        <h3 class="l-type__heading l-type__heading--h3">Games</h3>
+
+                                        <p class="c-highlight__text"><p>Ontdek wat er allemaal in games zit <strong>&gt;</strong></p></p>
+                                </div>
+                                    <a href="/kennis/games/" class="c-highlight__textlink c-highlight__textlink--hidden">Games</a>
+                            </div>
+                        </div>
+                        <div class="c-highlight__item">
+                            <div class="c-highlight__wrapper">
+<picture class="c-highlight__picture l-image__parent--landscape l-image__parent"><source media="(min-width: 768px)" srcset="/media/1m4pkcv4/pexels-jessica-lewis-creative-4200824.jpg?anchor=center&amp;mode=crop&amp;width=640&amp;height=427&amp;quality=80&amp;token=XyYlX%2fDwo5" /><img alt="" class="c-highlight__image l-image__item--loaded l-image__item" height="480" loading="lazy" src="/media/1m4pkcv4/pexels-jessica-lewis-creative-4200824.jpg?anchor=center&amp;mode=crop&amp;width=480&amp;height=320&amp;quality=80&amp;token=vJff2OjNfF" title="" width="800" /></picture>
+                                <div class="l-grid__item l-grid__item--tiny c-highlight__content c-highlight__content--kennis">
+                                        <h3 class="l-type__heading l-type__heading--h3">Platformwijzer</h3>
+
+                                        <p class="c-highlight__text"><p>Lees alles over apps en platforms <strong>&gt;</strong></p></p>
+                                </div>
+                                    <a href="/kennis/platformwijzer/" class="c-highlight__textlink c-highlight__textlink--hidden">Platformwijzer</a>
+                            </div>
+                        </div>
+                        <div class="c-highlight__item">
+                            <div class="c-highlight__wrapper">
+<picture class="c-highlight__picture l-image__parent--landscape l-image__parent"><source media="(min-width: 768px)" srcset="/media/la4hjfrh/settings.png?anchor=center&amp;mode=crop&amp;width=640&amp;height=427&amp;quality=80&amp;token=is0RJz%2fwwB" /><img alt="" class="c-highlight__image l-image__item--loaded l-image__item" height="480" loading="lazy" src="/media/la4hjfrh/settings.png?anchor=center&amp;mode=crop&amp;width=480&amp;height=320&amp;quality=80&amp;token=4xgv6Qv28T" title="" width="800" /></picture>
+                                <div class="l-grid__item l-grid__item--tiny c-highlight__content c-highlight__content--kennis">
+                                        <h3 class="l-type__heading l-type__heading--h3">Ouderlijk toezicht</h3>
+
+                                        <p class="c-highlight__text"><p>Ontdek hoe je ouderlijk toezicht inzet <strong>&gt;</strong></p></p>
+                                </div>
+                                    <a href="/kennis/ouderlijk-toezicht/" class="c-highlight__textlink c-highlight__textlink--hidden">Ouderlijk toezicht</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="l-grid__content l-grid__content--wide">
+    <div class="l-grid__grid c-card__grid ">
+        <div class="l-grid__col l-grid__col--1-1 l-grid__col--md-1-2 animate zoom-in" data-delay="200">
+<picture class="c-card__picture l-image__parent--landscape l-image__parent"><source media="(min-width: 768px)" srcset="/media/bdqbleuo/kijkwijzer-3.jpg?anchor=center&amp;mode=crop&amp;width=640&amp;height=427&amp;quality=80&amp;token=qEVGQX7rww" /><img alt="" class="c-card__image l-image__item--loaded l-image__item" height="400" loading="lazy" src="/media/bdqbleuo/kijkwijzer-3.jpg?anchor=center&amp;mode=crop&amp;width=800&amp;height=534&amp;quality=80&amp;token=FtlCee04EO" title="" width="640" /></picture>        </div>
+
+        <div class="l-grid__col l-grid__col--1-1 l-grid__col--md-1-2">
+            <div class="c-card__item c-card__item--klachten animate slide-in">
+                <div class="l-grid__item animate animate-parent slide-in">
+                    <h2 class="l-type__heading l-type__heading--h2 c-card__title--">Heb je een klacht?</h2>
+                <p>Ben je het oneens met een Kijkwijzeradvies? Dan kun je een klacht indienen bij het NICAM, de organisatie achter Kijkwijzer.</p>                                    <a class="btn btn--link c-card__btn c-card__btn--klachten" href="/klachten/">Dien een klacht in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="l-grid__content l-grid__content--wide">
+    <div class="l-grid__grid c-card__grid c-card__grid--reverse">
+        <div class="l-grid__col l-grid__col--1-1 l-grid__col--md-1-2 animate zoom-in" data-delay="200">
+<picture class="c-card__picture l-image__parent--landscape l-image__parent"><source media="(min-width: 768px)" srcset="/media/1q1pr5ya/paashaas-academie_st_4_jpg_sd-low.jpg?anchor=center&amp;mode=crop&amp;width=640&amp;height=427&amp;quality=80&amp;token=UvEbcVyp%2fb" /><img alt="" class="c-card__image l-image__item--loaded l-image__item" height="400" loading="lazy" src="/media/1q1pr5ya/paashaas-academie_st_4_jpg_sd-low.jpg?anchor=center&amp;mode=crop&amp;width=800&amp;height=534&amp;quality=80&amp;token=t65gPqzdwU" title="" width="640" /></picture>        </div>
+
+        <div class="l-grid__col l-grid__col--1-1 l-grid__col--md-1-2">
+            <div class="c-card__item c-card__item--kids animate slide-in">
+                <div class="l-grid__item animate animate-parent slide-in">
+                    <h2 class="l-type__heading l-type__heading--h2 c-card__title--">Kids</h2>
+                <p>Zit je op de basisschool en heb je informatie nodig voor een spreekbeurt of werkstuk? Of ben je gewoon benieuwd hoe Kijkwijzer werkt? Kijk dan snel op de Kids pagina!</p>                                    <a class="btn btn--link c-card__btn c-card__btn--kids" href="/kids/">Check onze Kids pagina!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </main>
+
+    <footer class="l-grid__container">
+
+    <div class="l-grid__content l-grid__content--top">
+        <div class="l-grid__grid">
+            <div class="l-grid__col l-grid__col--1-1">
+                <div class="c-footer__topitems animate animate-parent zoom-in">
+                        <a href="/kennis/" class="c-footer__topitem">
+                            <span class="c-footer__circle c-footer__circle--kennis">
+                                <svg class="c-footer__icon"><use xlink:href="/Assets/Icons/icons.svg#kennis"></use></svg>
+                            </span>
+                            <span class="c-footer__toplink">Kennis</span>
+                        </a>
+                                            <a href="/nieuws/" class="c-footer__topitem">
+                            <span class="c-footer__circle c-footer__circle--kijkwijzer">
+                                <svg class="c-footer__icon c-footer__icon--alt"><use xlink:href="/Assets/Icons/icons.svg#nieuws"></use></svg>
+                            </span>
+                            <span class="c-footer__toplink">Nieuws</span>
+                        </a>
+                                            <a href="/klachten/" class="c-footer__topitem">
+                            <span class="c-footer__circle c-footer__circle--klachten">
+                                <svg class="c-footer__icon"><use xlink:href="/Assets/Icons/icons.svg#klachten"></use></svg>
+                            </span>
+                            <span class="c-footer__toplink">Klachten</span>
+                        </a>
+                                            <a href="/kids/" class="c-footer__topitem">
+                            <span class="c-footer__circle c-footer__circle--kids">
+                                <svg class="c-footer__icon c-footer__icon--alt"><use xlink:href="/Assets/Icons/icons.svg#kids"></use></svg>
+                            </span>
+                            <span class="c-footer__toplink">Kids</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="c-footer__container">
+        <div class="l-grid__content">
+            <div class="l-grid__grid">
+                <div class="l-grid__col l-grid__col--1-1 animate fade-in">
+                    <button class="btn btn--link c-footer__button" data-link="language">
+
+                        Taal: <span class="c-footer__label">Nederlands</span>
+                    </button>
+                    <div class="c-footer__items">
+                        <div class="c-footer__item"><a href="https://www.nicam.nl" class="c-footer__link">&copy; NICAM / Kijkwijzer</a></div>
+                        <div class="c-footer__item">
+                            <div class="c-footer__list">
+                                    <a href="/contact/" class="c-footer__listlink">Contact</a>
+                                    <a href="/cookies/" class="c-footer__listlink">Cookies</a>
+                                    <a href="/privacy/" class="c-footer__listlink">Privacy</a>
+                            </div>
+                        </div>
+                        <div class="c-footer__item"><a href="https://www.perplex.nl" class="c-footer__link">Design & realisatie Perplex Digital</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <div class="c-modal__parent js-modal-parent">
+            <div class="c-modal__item" data-modal="alle-leeftijden" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+                        <span class="c-modal__mark">
+                            <svg class="c-modal__markicon"><use xlink:href="/Assets/Icons/icons.svg#alle-leeftijden"></use></svg>
+                        </span>
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Alle leeftijden</h2>
+                        <p>Het leeftijdsadvies Alle leeftijden (AL) geeft aan dat een film, serie of televisieprogramma géén schadelijke beelden bevat.</p>
+                                                    <a href="/over-kijkwijzer/alle-leeftijden/" class="btn c-modal__btn">Lees meer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="leeftijd-6" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+                        <span class="c-modal__mark">
+                            <svg class="c-modal__markicon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-6"></use></svg>
+                        </span>
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">6 jaar</h2>
+                        <p>Het leeftijdsadvies 6 jaar is ontwikkeld om jonge kinderen te beschermen tegen enge en gewelddadige beelden. Juist jongere kinderen kunnen daar gevoelig voor zijn.</p>
+                                                    <a href="/over-kijkwijzer/6-jaar/" class="btn c-modal__btn">Lees meer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="leeftijd-9" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+                        <span class="c-modal__mark">
+                            <svg class="c-modal__markicon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-9"></use></svg>
+                        </span>
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">9 jaar</h2>
+                        <p>Pas vanaf hun 9e begrijpen kinderen beter of een film of serie echt is. Sommige beelden krijgen daarom het leeftijdsadvies 9 jaar. </p>
+                                                    <a href="/over-kijkwijzer/9-jaar/" class="btn c-modal__btn">Lees meer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="leeftijd-12" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+                        <span class="c-modal__mark">
+                            <svg class="c-modal__markicon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-12"></use></svg>
+                        </span>
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">12 jaar</h2>
+                        <p>Tussen de 10 en 12 jaar gaan kinderen op een andere manier naar de wereld kijken. Toch zijn deze kinderen nog makkelijker te beïnvloeden dan pubers. </p>
+                                                    <a href="/over-kijkwijzer/12-jaar/" class="btn c-modal__btn">Lees meer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="leeftijd-14" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+                        <span class="c-modal__mark">
+                            <svg class="c-modal__markicon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-14"></use></svg>
+                        </span>
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">14 jaar</h2>
+                        <p>Op deze leeftijd gebruiken kinderen film en televisie steeds vaker om ‘sociale’ lessen te leren, bijvoorbeeld over hoe je jezelf bent of hoe je het beste met anderen om kunt gaan. Daarom kan het kijken naar gevaarlijk gedrag op deze leeftijd problemen veroorzaken.</p>
+                                                    <a href="/over-kijkwijzer/14-jaar/" class="btn c-modal__btn">Lees meer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="leeftijd-16" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+                        <span class="c-modal__mark">
+                            <svg class="c-modal__markicon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-16"></use></svg>
+                        </span>
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">16 jaar</h2>
+                        <p>Hoewel pubers van rond de 16 beter het verschil tussen goed en slecht begrijpen, betekent dat niet dat zij alle films en series zonder problemen kunnen volgen.</p>
+                                                    <a href="/over-kijkwijzer/16-jaar/" class="btn c-modal__btn">Lees meer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="leeftijd-18" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+                        <span class="c-modal__mark">
+                            <svg class="c-modal__markicon"><use xlink:href="/Assets/Icons/icons.svg#leeftijd-18"></use></svg>
+                        </span>
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">18 jaar</h2>
+                        <p>Het leeftijdsadvies 18 jaar geeft aan welke films en programma’s echt alléén voor volwassenen zijn.</p>
+                                                    <a href="/over-kijkwijzer/18-jaar/" class="btn c-modal__btn">Lees meer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="geweld" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+                        <span class="c-modal__mark">
+                            <svg class="c-modal__markicon"><use xlink:href="/Assets/Icons/icons.svg#geweld"></use></svg>
+                        </span>
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Geweld</h2>
+                        <p>Kinderen die geweld zien, kunnen daar agressief of bang van worden. Of ze kunnen gemakkelijk over geweld gaan denken: het stompt ze af. Er spelen wel een aantal dingen mee, die bepalen hoe groot de kans op deze schadelijke gevolgen is. Bijvoorbeeld: hoe écht het geweld is, of er bloed te zien is, of dat het geweld beloond wordt.</p>
+                                                    <a href="/over-kijkwijzer/geweld/" class="btn c-modal__btn">Lees meer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="angst" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+                        <span class="c-modal__mark">
+                            <svg class="c-modal__markicon"><use xlink:href="/Assets/Icons/icons.svg#angst"></use></svg>
+                        </span>
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Angst</h2>
+                        <p>Van enge beelden kunnen kinderen schrikken, bang en onrustig worden of zelfs langdurige angsten zoals nachtmerries krijgen. Hoe heftig deze effecten zijn, verschilt per persoon en per leeftijd.</p>
+                                                    <a href="/over-kijkwijzer/angst/" class="btn c-modal__btn">Lees meer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="seks" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+                        <span class="c-modal__mark">
+                            <svg class="c-modal__markicon"><use xlink:href="/Assets/Icons/icons.svg#seks"></use></svg>
+                        </span>
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Seks</h2>
+                        <p>Kinderen en jongeren die middenin hun (seksuele) ontwikkeling zitten, kunnen nog niet toe zijn aan het zien van seks. Ook kunnen ze het soms niet goed plaatsen. Kijkwijzer houdt hier rekening mee. Hoe duidelijk seks in beeld komt, bepaalt het uiteindelijke leeftijdsadvies.</p>
+                                                    <a href="/over-kijkwijzer/seks/" class="btn c-modal__btn">Lees meer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="grof-taalgebruik" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+                        <span class="c-modal__mark">
+                            <svg class="c-modal__markicon"><use xlink:href="/Assets/Icons/icons.svg#grof-taalgebruik"></use></svg>
+                        </span>
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Grof taalgebruik</h2>
+                        <p>Grof taalgebruik gaat over grove woorden, schuttingtaal, schelden of vloeken. Kinderen kunnen hier een voorbeeld aan nemen en het nadoen of overnemen.</p>
+                                                    <a href="/over-kijkwijzer/grof-taalgebruik/" class="btn c-modal__btn">Lees meer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="discriminatie" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+                        <span class="c-modal__mark">
+                            <svg class="c-modal__markicon"><use xlink:href="/Assets/Icons/icons.svg#discriminatie"></use></svg>
+                        </span>
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Discriminatie</h2>
+                        <p>Discriminatie is elke uitspraak of uitdrukking die bepaalde (groepen) mensen als ‘minder’ afschildert, bijvoorbeeld op basis van ras, religie, seksuele voorkeur, geslacht of nationaliteit. Als dit in een productie voorkomt en de discriminerende uitspraak of actie wordt niet direct afgekeurd of afgestraft, dan wordt het pictogram voor discriminatie getoond.</p>
+                                                    <a href="/over-kijkwijzer/discriminatie/" class="btn c-modal__btn">Lees meer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="drugs" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+                        <span class="c-modal__mark">
+                            <svg class="c-modal__markicon"><use xlink:href="/Assets/Icons/icons.svg#drugs"></use></svg>
+                        </span>
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Drugs</h2>
+                        <p>Als in een film of serie harddrugs worden gebruikt, of (veel) alcohol, softdrugs of tabak, dan krijgt het een Kijkwijzer symbool voor roken, alcohol en drugs. Jongeren kunnen het als iets normaals gaan zien, of zelfs als iets om uit te proberen.</p>
+                                                    <a href="/over-kijkwijzer/roken-alcohol-en-drugs/" class="btn c-modal__btn">Lees meer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="violence" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Geweld</h2>
+                        <p>De game bevat geweld. In spellen met PEGI 7 gaat het om niet-realistisch of niet-expliciet geweld. Games in de leeftijdscategorie PEGI 12 kunnen realistisch geweld bevatten tegen fantasiepersonages, en niet-realistisch geweld tegen menselijke personages. In games met een PEGI 16 of PEGI 18 zit steeds realistischer geweld, vaak met bloed.</p>
+                                            </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="fear" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Angst</h2>
+                        <p>Dit pictogram komt voor bij spellen met een PEGI 7-advies als ze beelden of geluiden bevatten die angstaanjagend kunnen zijn voor jongere kinderen. Als er wat heftigere horroreffecten voorkomen leidt dit tot een PEGI 12 of PEGI 16.</p>
+                                            </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="sex" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Seks</h2>
+                        <p>Als dit pictogram voorkomt bij een spel met een PEGI 12-advies, kunnen personages seksueel getinte opmerkingen maken of uitdagend poseren. Bij een PEGI 16 game kan er sprake zijn van erotisch naakt of seks (waarbij geslachtsdelen niet zichtbaar zijn). Bij PEGI 18 wijst dit pictogram op expliciete seksuele activiteit. Aan beelden van niet-seksueel naakt hangt géén leeftijdsadvies.</p>
+                                            </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="drugs" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Drugs</h2>
+                        <p>De game toont of verwijst naar het gebruik van illegale drugs, alcohol of tabak. Games met dit inhoudspictogram krijgen altijd het leeftijdsadvies PEGI 16 of PEGI 18.</p>
+                                            </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="discrimination" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Discriminatie</h2>
+                        <p>Als dit pictogram voorkomt, bevat een spel etnische, religieuze, nationalistische of andere stereotypes die aanzetten tot haat. Dit soort inhoud krijgt altijd een PEGI 18-classificatie en is in veel gevallen strafbaar.</p>
+                                            </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="bad_language" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Grof taalgebruik</h2>
+                        <p>Een game met dit pictogram bevat grof taalgebruik. In tegenstelling tot Kijkwijzer,<span> </span><a href="/over-kijkwijzer/grof-taalgebruik/" title="Grof taalgebruik">waarbij grof taalgebruik <em>niet </em>tot een bepaalde leeftijd leidt</a>, zorgt het bij PEGI voor een PEGI 12, PEGI 16 of PEGI 18. </p>
+                                            </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="3" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">PEGI 3</h2>
+                        <p>PEGI 3 games zijn geschikt voor alle leeftijden. Een héél milde vorm van geweld kan voorkomen. De game bevat geen geluiden of beelden die jonge kinderen bang kunnen maken. Er is geen grof taalgebruik te horen of te lezen.</p>
+                                            </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="7" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">PEGI 7</h2>
+                        <p>Games met beelden of geluiden die angstaanjagend kunnen zijn voor jongere kinderen, vallen in deze categorie. Een heel milde vorm van geweld (niet-realistisch geweld, zonder al te veel details) kan voorkomen in een game met een PEGI 7 advies.</p>
+                                            </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="12" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">PEGI 12</h2>
+                        <p>Games met iets explicieter geweld tegen fantasiepersonages, of met niet-realistisch geweld tegen menselijke personages, krijgen een PEGI 12 advies. Er kunnen wat scheldwoorden in zitten, of een beetje schunnige opmerkingen. Er komt geen seks in voor.</p>
+                                            </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="16" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">PEGI 16</h2>
+                        <p>Games krijgen een PEGI 16 advies als er geweld voorkomt dat er realistisch uitziet. Een personage reageert dan zoals iemand in het echt ook zou reageren op geweld. Ook kan er grof taalgebruik voorkomen, of seks, of het gebruik van alcohol, drugs en tabak.</p>
+                                            </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="18" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">PEGI 18</h2>
+                        <p>PEGI 18 wordt gebruikt wanneer het gaat om grof geweld, zinloos geweld, of geweld tegen weerloze personages (zoals kinderen of gijzelaars). De verheerlijking van illegaal drugsgebruik, gesimuleerd gokken, en expliciete seksuele activiteit leiden ook tot PEGI 18.</p>
+                                            </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="gambling" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Gokken</h2>
+                        <p>De game bevat elementen die gokken aanmoedigen en aanleren. Het gaat hierbij om kansspelen die normaal gesproken voorkomen in casino's of speelzalen. Een aantal oudere spellen hebben dit pictogram in combinatie met een PEGI 12 of PEGI 16, maar sinds 2020 krijgen nieuwe spellen met dit soort inhoud altijd PEGI 18.</p>
+                                            </div>
+                </div>
+            </div>
+            <div class="c-modal__item" data-modal="in-game_purchases" tabindex="-1">
+                <button type="button" class="c-modal__close reset-btn js-modal-close">
+                    <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                    <span class="vh">Sluiten</span>
+                </button>
+                <div class="c-modal__wrapper">
+
+                    <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                        <h2 class="l-type__heading l-type__heading--h2 c-modal__title">In-game aankopen</h2>
+                        <p>De game biedt spelers de mogelijkheid om digitale spullen of diensten te kopen met echt geld. Denk hierbij aan bonus levels of kleding voor je personage, maar ook aan virtuele munten of het uitschakelen van advertenties. </p>
+                                            </div>
+                </div>
+            </div>
+
+        <div class="c-modal__item" data-modal="language" tabindex="-1">
+            <button type="button" class="c-modal__close reset-btn js-modal-close">
+                <svg class="c-modal__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+                <span class="vh">Sluiten</span>
+            </button>
+            <div class="c-modal__wrapper">
+                <div class="c-modal__scroll l-grid__item l-grid__item--small">
+                    <h2 class="l-type__heading l-type__heading--h2 c-modal__title">Selecteer een taal</h2>
+                    <div class="c-modal__links">
+                            <a href="/en/" class="c-modal__link js-language-link">English</a>
+                            <a href="/" class="c-modal__link js-language-link">Nederlands</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+    <div class="c-overlay__parent js-overlay-parent">
+    <div class="c-overlay__item" data-overlay="nav" tabindex="-1">
+        <button type="button" class="c-overlay__close reset-btn js-overlay-close">
+            <svg class="c-overlay__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+            <span class="vh">Sluiten</span>
+        </button>
+        
+
+<div class="c-nav__wrapper">
+    <nav class="c-nav__parent animate animate-parent slide-in">
+                <div class="c-nav__item">
+                    <a class="c-nav__link" href="/">Kijkwijzer</a>
+                </div>
+                <div class="c-nav__item">
+                    <a class="c-nav__link" href="/over-kijkwijzer/">Over Kijkwijzer</a>
+                        <button type="button" class="c-nav__toggle reset-btn js-nav-toggle">
+                            <svg class="c-nav__icon"><use xlink:href="/Assets/Icons/icons.svg#down"></use></svg>
+                            <span class="vh">Toggle</span>
+                        </button>
+                        <div class="c-nav__subitems js-nav-sub">
+                                <a href="/over-kijkwijzer/hoe-wordt-het-kijkwijzeradvies-bepaald/" class="c-nav__sublink">Hoe wordt het Kijkwijzeradvies bepaald?</a>
+                                <a href="/over-kijkwijzer/kijkwijzer-en-de-wet/" class="c-nav__sublink">Kijkwijzer en de wet</a>
+                                <a href="/over-kijkwijzer/over-het-nicam/" class="c-nav__sublink">Over het NICAM</a>
+                        </div>
+                </div>
+                <div class="c-nav__item">
+                    <a class="c-nav__link" href="/kennis/">Kennis</a>
+                        <button type="button" class="c-nav__toggle reset-btn js-nav-toggle">
+                            <svg class="c-nav__icon"><use xlink:href="/Assets/Icons/icons.svg#down"></use></svg>
+                            <span class="vh">Toggle</span>
+                        </button>
+                        <div class="c-nav__subitems js-nav-sub">
+                                <a href="/kennis/games/" class="c-nav__sublink">Games</a>
+                                <a href="/kennis/ouderlijk-toezicht/" class="c-nav__sublink">Ouderlijk toezicht</a>
+                                <a href="/kennis/platformwijzer/" class="c-nav__sublink">Platformwijzer</a>
+                        </div>
+                </div>
+                <div class="c-nav__item">
+                    <a class="c-nav__link" href="/nieuws/">Nieuws</a>
+                </div>
+                <div class="c-nav__item">
+                    <a class="c-nav__link" href="/klachten/">Klachten</a>
+                        <button type="button" class="c-nav__toggle reset-btn js-nav-toggle">
+                            <svg class="c-nav__icon"><use xlink:href="/Assets/Icons/icons.svg#down"></use></svg>
+                            <span class="vh">Toggle</span>
+                        </button>
+                        <div class="c-nav__subitems js-nav-sub">
+                                <a href="/klachten/overzicht/" class="c-nav__sublink">Klachtenoverzicht</a>
+                                <a href="/klachten/klachtenformulier/" class="c-nav__sublink">Klacht indienen</a>
+                        </div>
+                </div>
+                <div class="c-nav__item">
+                    <a class="c-nav__link" href="/kids/">Kids</a>
+                </div>
+                <div class="c-nav__item">
+                    <a class="c-nav__link" href="/contact/">Contact</a>
+                </div>
+    </nav>
+</div>
+
+        <button class="c-overlay__background reset-btn js-overlay-close"><span class="vh">Sluiten</span></button>
+    </div>
+    <div class="c-overlay__item c-overlay__item--right c-overlay__item--search" data-overlay="search" tabindex="-1">
+        <button type="button" class="c-overlay__close c-overlay__close--right reset-btn js-overlay-close">
+            <svg class="c-overlay__icon"><use xlink:href="/Assets/Icons/icons.svg#close"></use></svg>
+            <span class="vh">Sluiten</span>
+        </button>
+
+        <div class="c-search__wrapper">
+            <div class="c-search__part" data-id="aa4cb130-c8ac-4763-9496-ed2c30f256fd">
+    <div class="c-search__form">
+        <label for="search" class="vh">Vind films, series of games ...</label>
+        <input type="search" id="search" class="c-search__input js-search-input" value="" placeholder="Vind films, series of games ...">
+        <button type="button" class="c-search__submit reset-btn js-search-button">
+            <svg class="c-search__search"><use xlink:href="/Assets/Icons/icons.svg#search"></use></svg>
+            <span class="vh">Zoeken</span>
+        </button>
+    </div>
+
+    <div class="js-search-results" style="width: 100%;">
+        
+
+
+
+    </div>
+
+    <script>
+        Perplex.Ready(function () {
+            new Perplex.Search(
+                'aa4cb130-c8ac-4763-9496-ed2c30f256fd',
+                'nl',
+                'a77f11d2-0e15-4f0f-9d06-eb7adaa48b4d',
+                '',
+                '0',
+                true,
+                3
+            ).init();
+        });
+    </script>
+</div>
+
+            <div class="c-search__part l-grid__item js-search-suggestions">
+        <span class="l-type__heading l-type__heading--h3 c-search__heading">Zoeksuggesties</span>
+
+        <div class="c-search__results">
+<div class="c-search__result">
+<picture class="c-search__picture l-image__parent--portrait l-image__parent"><source media="(min-width: 0)" srcset="/media/flsnrcsp/strangerthings4_netflix.jpg?anchor=center&amp;mode=crop&amp;width=480&amp;height=720&amp;quality=80&amp;token=JFtv8mSvht" /><img alt="" class="c-search__image l-image__item--loaded l-image__item" height="640" loading="lazy" src="/media/flsnrcsp/strangerthings4_netflix.jpg?anchor=center&amp;mode=crop&amp;width=480&amp;height=720&amp;quality=80&amp;token=JFtv8mSvht" title="" width="480" /></picture>        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="l-type__heading l-type__heading--h4 c-search__title">Stranger Things 4</h3>
+            <p class="c-search__text">
+                Serie
+(2022)            </p>
+
+                <div class="c-search__marks">
+                        <span class="c-search__mark c-search__mark--leeftijd-16">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#leeftijd-16"></use>
+                            </svg>
+                        </span>
+                        <span class="c-search__mark c-search__mark--geweld">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#geweld"></use>
+                            </svg>
+                        </span>
+                        <span class="c-search__mark c-search__mark--angst">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#angst"></use>
+                            </svg>
+                        </span>
+                        <span class="c-search__mark c-search__mark--grof-taalgebruik">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#grof-taalgebruik"></use>
+                            </svg>
+                        </span>
+                </div>
+            <a href="/series/stranger-things-4/" class="c-search__hiddenlink"></a>
+        </div>
+</div>
+<div class="c-search__result">
+<picture class="c-search__picture l-image__parent--portrait l-image__parent"><source media="(min-width: 0)" srcset="/media/k5znyvpj/top-gun_-maverick_ps_1_jpg_sd-high_copyright-2019-paramount-pictures-corporation-all-rights-reserved.jpg?anchor=center&amp;mode=crop&amp;width=480&amp;height=720&amp;quality=80&amp;token=mRzV0xhRsj" /><img alt="Cover Top Gun: Maverick" class="c-search__image l-image__item--loaded l-image__item" height="640" loading="lazy" src="/media/k5znyvpj/top-gun_-maverick_ps_1_jpg_sd-high_copyright-2019-paramount-pictures-corporation-all-rights-reserved.jpg?anchor=center&amp;mode=crop&amp;width=480&amp;height=720&amp;quality=80&amp;token=mRzV0xhRsj" title="Cover Top Gun: Maverick" width="480" /></picture>        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="l-type__heading l-type__heading--h4 c-search__title">TOP GUN: MAVERICK</h3>
+            <p class="c-search__text">
+                Speelfilm
+(2022)            </p>
+
+                <div class="c-search__marks">
+                        <span class="c-search__mark c-search__mark--leeftijd-12">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#leeftijd-12"></use>
+                            </svg>
+                        </span>
+                        <span class="c-search__mark c-search__mark--geweld">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#geweld"></use>
+                            </svg>
+                        </span>
+                </div>
+            <a href="/films/top-gun-maverick/" class="c-search__hiddenlink"></a>
+        </div>
+</div>
+<div class="c-search__result">
+<picture class="c-search__picture l-image__parent--portrait l-image__parent"><source media="(min-width: 0)" srcset="/media/z1claose/384281_sexeducation1.jpg?anchor=center&amp;mode=crop&amp;width=480&amp;height=720&amp;quality=80&amp;token=pVujYx4cZP" /><img alt="" class="c-search__image l-image__item--loaded l-image__item" height="640" loading="lazy" src="/media/z1claose/384281_sexeducation1.jpg?anchor=center&amp;mode=crop&amp;width=480&amp;height=720&amp;quality=80&amp;token=pVujYx4cZP" title="" width="480" /></picture>        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="l-type__heading l-type__heading--h4 c-search__title">Sex Education: Season 1</h3>
+            <p class="c-search__text">
+                Serie
+(2019)            </p>
+
+                <div class="c-search__marks">
+                        <span class="c-search__mark c-search__mark--leeftijd-12">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#leeftijd-12"></use>
+                            </svg>
+                        </span>
+                        <span class="c-search__mark c-search__mark--angst">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#angst"></use>
+                            </svg>
+                        </span>
+                        <span class="c-search__mark c-search__mark--seks">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#seks"></use>
+                            </svg>
+                        </span>
+                        <span class="c-search__mark c-search__mark--grof-taalgebruik">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#grof-taalgebruik"></use>
+                            </svg>
+                        </span>
+                        <span class="c-search__mark c-search__mark--drugs">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#drugs"></use>
+                            </svg>
+                        </span>
+                </div>
+            <a href="/series/sex-education-season-1/" class="c-search__hiddenlink"></a>
+        </div>
+</div>
+<div class="c-search__result">
+<picture class="c-search__picture l-image__parent--portrait l-image__parent"><source media="(min-width: 0)" srcset="/media/uqtpecxs/cover.jpg?anchor=center&amp;mode=crop&amp;width=480&amp;height=720&amp;quality=80&amp;token=NAf1V1aOTN" /><img alt="" class="c-search__image l-image__item--loaded l-image__item" height="640" loading="lazy" src="/media/uqtpecxs/cover.jpg?anchor=center&amp;mode=crop&amp;width=480&amp;height=720&amp;quality=80&amp;token=NAf1V1aOTN" title="" width="480" /></picture>        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="l-type__heading l-type__heading--h4 c-search__title">After We Collided</h3>
+            <p class="c-search__text">
+                Speelfilm
+(2020)            </p>
+
+                <div class="c-search__marks">
+                        <span class="c-search__mark c-search__mark--leeftijd-14">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#leeftijd-14"></use>
+                            </svg>
+                        </span>
+                        <span class="c-search__mark c-search__mark--seks">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#seks"></use>
+                            </svg>
+                        </span>
+                        <span class="c-search__mark c-search__mark--grof-taalgebruik">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#grof-taalgebruik"></use>
+                            </svg>
+                        </span>
+                        <span class="c-search__mark c-search__mark--drugs">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#drugs"></use>
+                            </svg>
+                        </span>
+                </div>
+            <a href="/films/after-we-collided/" class="c-search__hiddenlink"></a>
+        </div>
+</div>
+<div class="c-search__result">
+<picture class="c-search__picture l-image__parent--portrait l-image__parent"><source media="(min-width: 0)" srcset="/media/ywdd4men/433880_harry_potter_1_cover.jpg?anchor=center&amp;mode=crop&amp;width=480&amp;height=720&amp;quality=80&amp;token=KHzpY%2fhN4k" /><img alt="" class="c-search__image l-image__item--loaded l-image__item" height="640" loading="lazy" src="/media/ywdd4men/433880_harry_potter_1_cover.jpg?anchor=center&amp;mode=crop&amp;width=480&amp;height=720&amp;quality=80&amp;token=KHzpY%2fhN4k" title="" width="480" /></picture>        <div class="l-grid__item l-grid__item--xs">
+            <h3 class="l-type__heading l-type__heading--h4 c-search__title">Harry Potter and the Philosopher&#39;s Stone</h3>
+            <p class="c-search__text">
+                Speelfilm
+(2001)            </p>
+
+                <div class="c-search__marks">
+                        <span class="c-search__mark c-search__mark--leeftijd-9">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#leeftijd-9"></use>
+                            </svg>
+                        </span>
+                        <span class="c-search__mark c-search__mark--angst">
+                            <svg class="c-search__markicon">
+                                <use xlink:href="/Assets/Icons/icons.svg#angst"></use>
+                            </svg>
+                        </span>
+                </div>
+            <a href="/films/harry-potter-and-the-philosopher-s-stone/" class="c-search__hiddenlink"></a>
+        </div>
+</div>
+        </div>
+
+        <span class="l-type__heading l-type__heading--h3 c-search__heading">Overige pagina&#39;s</span>
+
+        <div class="c-search__pages">
+                <a href="/kennis/" class="c-search__page">Kennis</a>
+                <a href="/contact/" class="c-search__page">Contact</a>
+                <a href="/klachten/klachtenformulier/" class="c-search__page">Klacht indienen</a>
+        </div>
+</div>
+
+        </div>
+
+        <button class="c-overlay__background reset-btn js-overlay-close"><span class="vh">Sluiten</span></button>
+    </div>
+
+    <script>
+        Perplex.Ready(function () {
+            Perplex.Overlay.init('aa4cb130-c8ac-4763-9496-ed2c30f256fd');
+        })
+    </script>
+</div>
+
+
+    <script src="/bundles/js?v=2UszvOFccCjlqeotF_U6AIKk49EZ4QivXAlCeOKzGMY1"></script>
+
+    <script src="/bundles/js/perplex?v=8Ls1LiLvKvCcK0Lc-sctwcULnWlngM6UTiT_i3SQyDg1"></script>
+
+
+    
+    
+
+</body>
+</html>
