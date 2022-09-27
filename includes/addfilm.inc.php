@@ -21,13 +21,13 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
         <div class="mb-3 mt-3">
             <label>Title:</label>
-            <input type="text" class="form-control" placeholder="Title:" name="title">
+            <input type="text" class="form-control" placeholder="Title" name="title">
         </div>
 
 
         <div class="mb-3 mt-3">
-            <label>Description:</label>
-            <input type="text" class="form-control" placeholder="Description:" name="description">
+            <label>description:</label>
+            <textarea class="form-control" aria-label="With textarea" placeholder="description" name="description"></textarea>
         </div>
 
 
@@ -39,13 +39,13 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
         <div class="mb-3 mt-3">
             <label>Language:</label>
-            <input type="text" class="form-control" placeholder="Language:" name="language">
+            <input type="text" class="form-control" placeholder="Language" name="language">
         </div>
 
 
         <div class="mb-3 mt-3">
             <label>Genre:</label>
-            <input type="text" class="form-control" placeholder="Genre:" name="genre">
+            <input type="text" class="form-control" placeholder="Genre" name="genre">
         </div>
 
         <label class="container">

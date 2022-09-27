@@ -24,10 +24,9 @@ $result = $stmttest->fetchAll();
             <label>Title:</label>
             <input type="text" class="form-control" placeholder="Enter name" value="<?= $row['title'] ?>" name="title">
         </div>
-        <div class="mb-3 mt-3">
-            <label>Description:</label>
-            <input type="text" class="form-control" placeholder="Enter email" value="<?= $row['description'] ?>"
-                   name="description">
+        <div class="input-group">
+            <span class="input-group-text">description</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
         </div>
 
         <div class="mb-3 mt-3">
