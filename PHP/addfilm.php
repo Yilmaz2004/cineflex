@@ -4,8 +4,6 @@ include '../../private/conn.php';
 session_start();
 
 $viewpoint = $_POST['viewpoint'];
-$status = 'notplanned';
-
 
 $picture = "picture/" . basename($_FILES["picture"]["name"]);
 //$viewpoint = "viewpoint/" . basename($_FILES["viewpoint"]["name"]);
@@ -46,24 +44,18 @@ if (isset($_POST["submit"])) {
             $language = $_POST['language'];
             $genre = $_POST['genre'];
 
-            $stmt = $conn->prepare("INSERT INTO movies  (title,description,length,language,genre,picture,status)
-                        VALUES(:title, :description,:length,:language,:genre,:picture,:status)");
+            $stmt = $conn->prepare("INSERT INTO movies  (title,description,length,language,genre,picture)
+                        VALUES(:title, :description,:length,:language,:genre,:picture)");
             $stmt->bindParam(':title', $title);
             $stmt->bindParam(':description', $description);
             $stmt->bindParam(':length', $length);
             $stmt->bindParam(':language', $language);
             $stmt->bindParam(':genre', $genre);
             $stmt->bindParam(':picture', $picture);
-            $stmt->bindParam(':status', $status);
-
             $stmt->execute();
 
             $moviesid = $conn->lastInsertId();
 
-
-            echo '<pre>';
-            print_r($_POST);
-            echo '</pre>';
 
 
             $viewpointage = $_POST['viewpointage'];

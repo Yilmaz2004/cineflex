@@ -19,7 +19,7 @@ if (isset($_SESSION['melding'])) {
 
         <div class="mb-3 mt-3">
             <label>Password:</label>
-            <input type="text" class="form-control" placeholder="Enter Password" name="password">
+            <input type="password" class="form-control" placeholder="Enter Password" name="password">
         </div>
         <button name="submit" type="submit" class="btn btn-success">Add</button>
     </form>

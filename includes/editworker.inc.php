@@ -19,13 +19,12 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC)
         </div>
         <div class="mb-3 mt-3">
             <label>Email:</label>
-            <input type="text" class="form-control" placeholder="Enter email" value="<?= $row['email'] ?>" name="email">
+            <input type="text"  class="form-control" placeholder="Enter email" value="<?= $row['email'] ?>" name="email">
         </div>
 
         <div class="mb-3 mt-3">
-            <label>password:</label>
-            <input type="text" class="form-control" placeholder="Enter password" value="<?= $row['password'] ?>"
-                   name="password">
+            <label>Password:</label>
+            <input type="password" class="form-control" placeholder="Enter password" value="<?= $row['password'] ?>" name="password">
         </div>
         <input type="hidden" name="userid" value="<?= $userid ?>">
         <button name="submit" type="submit" class="btn btn-success">Update</button>

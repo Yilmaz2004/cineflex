@@ -1,40 +1,34 @@
-
 <?php
-$monday = date( 'd-m-Y', strtotime( 'monday this week' ) );
-$tuesday = date( 'd-m-Y', strtotime( 'tuesday this week' ) );
-$wednesday = date( 'd-m-Y', strtotime( 'wednesday this week' ) );
-$thursday = date( 'd-m-Y', strtotime( 'thursday this week' ) );
-$friday = date( 'd-m-Y', strtotime( 'friday this week' ) );
-$saturday = date( 'd-m-Y', strtotime( 'saturday this week' ) );
 
-$sql = "SELECT * FROM movies
+$sql = "SELECT m.moviesid, m.title,m.genre,c.moviesid,c.date,c.starttime,c.endtime,c.endtimemovie,r.room 
+FROM movies m 
+left join calendar c on m.moviesid = c.moviesid   
+left join room r on m.moviesid = r.moviesid        
+
+         
         WHERE status = 'planned'";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 
-
-//echo '<pre>'; print_r($row['title']); echo '</pre>';
-
 ?>
 
-<div class="container">
-    <div class="timetable-img text-center">
-    </div>
     <div class="table-responsive">
-        <button type="button" class="btn btn-primary"  onclick="window.location.href='index.php?page=planfilm'">Plan a film</button>
-        <button type="button" class="btn btn-info" style="float: right">Next week</button>
 
+<?php if( $_SESSION['userid'] == 'admin' ||  $_SESSION['userid'] == 'worker'  ){?>
+        <button type="button" class="btn btn-primary"  onclick="window.location.href='index.php?page=planfilm'">Plan a film</button>
+        <?php }?>
 
         <table class="table">
             <thead>
+            <div class='container'>
+                <table class='table table-bordered' >
             <tr>
-                <th scope="col">*</th>
-                <th scope="col"><?= $monday ?>/</th>
-                <th scope="col"><?= $tuesday ?>/</th>
-                <th scope="col"><?= $wednesday ?>/</th>
-                <th scope="col"><?= $thursday ?>/</th>
-                <th scope="col"><?= $friday ?>/</th>
-                <th scope="col"><?= $saturday ?></th>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Room</th>
+                <th>Date</th>
+                <th>Start time</th>
+                <th>End time</th>
             </tr>
             </thead>
             <?php if ($stmt->rowCount() > 0) {
@@ -42,10 +36,11 @@ $stmt->execute();
                     <tbody>
                     <tr>
                         <td><?= $row["title"] ?></td>
-
-                        <td> </td>
-
-                        <td> </td>
+                        <td><?= $row["genre"] ?> </td>
+                        <td><?= $row["room"] ?></td>
+                        <td><?= $row["date"] ?> </td>
+                        <td><?= $row["starttime"] ?> </td>
+                        <td><?= $row["endtimemovie"] ?> </td>
                     </tr>
                     </tbody>
                 <?php }

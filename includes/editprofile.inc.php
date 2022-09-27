@@ -1,81 +1,107 @@
 <?php
-$userid = $_GET['userid'];
+$moviesid = $_GET['moviesid'];
 
-$sql = "SELECT userid, firstname,middlename,lastname,place,street,housenumber,zipcode,number,dob, email, password FROM user
-        WHERE userid = :userid";
+$sql = "SELECT title, description, language, genre, picture FROM movies
+        WHERE moviesid = :moviesid ";
 $stmt = $conn->prepare($sql);
-$stmt->bindParam(':userid', $userid);
+$stmt->bindParam(':moviesid', $moviesid);
 $stmt->execute();
-$row = $stmt->fetch(PDO::FETCH_ASSOC)
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+$sql = "SELECT viewpointid, viewpoint FROM viewpoint where type = 'age'";
+$stmt2 = $conn->prepare($sql);
+$stmt2->execute();
+$row2 = $stmt2->fetch(PDO::FETCH_ASSOC);
+
+$movieviewpointids = array();
+
+$sql = "SELECT movieviewpointid, viewpointid, moviesid FROM movieviewpoint where moviesid = :moviesid";
+$stmt4 = $conn->prepare($sql);
+$stmt4->bindParam(':moviesid', $moviesid);
+$stmt4->execute();
+while ($row4 = $stmt4->fetch(PDO::FETCH_ASSOC)) {
+    array_push($movieviewpointids,$row4['viewpointid']);
+}
+
+
+$sql = "SELECT movieviewpointid, viewpointid, moviesid FROM movieviewpoint where moviesid = :moviesid";
+$stmt5 = $conn->prepare($sql);
+$stmt5->bindParam(':moviesid', $moviesid);
+$stmt5->execute();
+$row5 = $stmt5->fetch(PDO::FETCH_ASSOC)
 ?>
 
+<body>
 
-<body xmlns="http://www.w3.org/1999/html">
-<div class="container mt-3">
-    <h2>Profile information</h2>
+<h2>Edit film</h2>
+<form action="php/editfilm.php" method="POST" enctype="multipart/form-data">
     <div class="mb-3 mt-3">
-        <form action="php/editprofile.php" method="POST" enctype="multipart/form-data">
-
-            <label>Name:</label>
-            <input type="text" class="form-control" placeholder="Enter name" value="<?= $row['firstname'] ?>"
-                   name="firstname">
+        <label>Title:</label>
+        <input type="text" class="form-control" placeholder="Enter Title" value="<?= $row['title'] ?>" name="title">
     </div>
     <div class="mb-3 mt-3">
-        <label>Middle name:</label>
-        <input type="text" class="form-control" placeholder="Enter middle name" value="<?= $row['middlename'] ?>"
-               name="middlename">
+        <label>Description:</label>
+        <input type="text" class="form-control" placeholder="Enter description" value="<?= $row['description'] ?>"
+               name="description">
     </div>
-
-    <div class="mb-3 mt-3">
-        <label>Last name:</label>
-        <input type="text" class="form-control" name="lastname" placeholder="Enter last name"
-               value="<?= $row['lastname'] ?>">
-    </div>
-
-    <div class="mb-3 mt-3">
-        <label>Place:</label>
-        <input type="text" class="form-control" placeholder="Enter place" name="place" value="<?= $row['place'] ?>">
-    </div>
-
-    <div class="mb-3 mt-3">
-        <label>Street:</label>
-        <input type="text" class="form-control" placeholder="Enter street" name="street" value="<?= $row['street'] ?>">
+    <div class="input-group">
+        <span class="input-group-text">description</span>
+        <textarea class="form-control" name="description" aria-label="With textarea" > <?= $row['description'] ?></textarea>
     </div>
 
 
     <div class="mb-3 mt-3">
-        <label>Housenumber:</label>
-        <input type="text" class="form-control" placeholder="Enter housenumber" name="housenumber"
-               value="<?= $row['housenumber'] ?>">
+        <label>Language:</label>
+        <input type="text" class="form-control" placeholder="Enter language" value="<?= $row['language'] ?>"
+               name="language">
+    </div>
+    <div class="mb-3 mt-3">
+        <label>Genre:</label>
+        <input type="text" class="form-control" placeholder="Enter Genre" value="<?= $row['genre'] ?>" name="genre">
     </div>
 
     <div class="mb-3 mt-3">
-        <label>Zipcode:</label>
-        <input type="text" class="form-control" placeholder="Enter zipcode" name="zipcode"
-               value="<?= $row['zipcode'] ?>">
+        <label>Picture:</label>
+        <input type="file" class="form-control"  value="<?= $row['picture'] ?>" name="picture" required>
     </div>
+    <label>
+
+        <input type="radio" name="viewpointage" value="<?= $row2["viewpointid"] ?>" <?php if($row2["viewpointid"] == $row5["viewpointid"]){ ?> checked="checked" <?php } ?>>
+
+        <img  class="picture" src="<?= $row2["viewpoint"] ?>" width="150px" height="150px">
+    </label>
+
+    <?php while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {?>
+
+        <label>
+            <input type="radio" name="viewpointage" value="<?= $row2["viewpointid"] ?>" <?php if($row2["viewpointid"] == $row5["viewpointid"]){ ?> checked="checked" <?php } ?> >
+            <span class="checkmark"></span>
+            <img  class="picture" src="<?= $row2["viewpoint"] ?>" width="150px" height="150px">
+        </label>
+
+    <?php }?>
+    <?php
+    $sql = "SELECT * FROM viewpoint where type != 'age'";
+    $stmt3 = $conn->prepare($sql);
+    $stmt3->execute();
+    while ($row3 = $stmt3->fetch(PDO::FETCH_ASSOC))
+    {?>
+
+        <label>
+            <input type="checkbox" name="viewpointid[]" value="<?= $row3["viewpointid"] ?>" <?php if(in_array($row3["viewpointid"], $movieviewpointids)){ ?> checked="checked" <?php } ?>>
 
 
-    <div class="mb-3 mt-3">
-        <label>Phone number:</label>
-        <input type="text" class="form-control" placeholder="Enter phone number" name="number"
-               value="<?= $row['number'] ?>">
-    </div>
+
+            <img  class="picture" src="<?= $row3["viewpoint"] ?>" width="150px" height="150px">
+        </label>
+
+    <?php }?>
 
 
-    <div class="mb-3 mt-3">
-        <label>Date of birth:</label>
-        <input type="date" class="form-control" placeholder="Enter date of birth" name="dob" value="<?= $row['dob'] ?>">
-    </div>
-
-    <div class="mb-3 mt-3">
-        <label>Email:</label>
-        <input type="text" class="form-control" placeholder="Enter email" name="email" value="<?= $row['email'] ?>">
-    </div>
 
 
+    <input type="hidden" name="moviesid" value="<?= $moviesid ?>">
     <button name="submit" type="submit" class="btn btn-success">Save changes</button>
-    </form>
+</form>
 
-</div>
 </body>
