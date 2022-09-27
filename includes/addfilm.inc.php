@@ -1,3 +1,12 @@
+<?php
+
+
+$sql = "SELECT * FROM viewpoint where type = 'age'";
+$stmt = $conn->prepare($sql);
+$stmt->execute();
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+?>
+
 <body>
 <div class="container mt-3">
     <h2>Add a film</h2>
@@ -39,11 +48,37 @@
             <input type="text" class="form-control" placeholder="Genre:" name="genre">
         </div>
 
+        <label class="container">
+            <input type="radio" name="viewpointage" value="<?= $row["viewpoint"] ?>" checked="checked" >
+            <span class="checkmark"></span>
+            <img  class="picture" src="<?= $row["viewpoint"] ?>" width="200px" height="200px">
+        </label>
 
-        <div class="mb-3 mt-3">
-            <label>Viewpoint:</label>
-            <input type="file" class="form-control" placeholder="Viewpoint:" name="viewpoint">
-        </div>
+<?php while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {?>
+
+        <label class="container">
+            <input type="radio" name="viewpointage" value="<?= $row["viewpoint"] ?>" checked="checked" >
+            <span class="checkmark"></span>
+            <img  class="picture" src="<?= $row["viewpoint"] ?>" width="200px" height="200px">
+        </label>
+
+<?php }
+
+        $sql = "SELECT * FROM viewpoint where type != 'age'";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+        while ($row2 = $stmt->fetch(PDO::FETCH_ASSOC)) {?>
+
+            <label class="container" >
+                <input type="checkbox" name="viewpoint[]" value="<?= $row2["viewpointid"] ?>">
+                <span class="checkmark"></span>
+                <img  class="picture" src="<?= $row2["viewpoint"] ?>" width="200px" height="200px">
+            </label>
+
+        <?php }?>
+
+
+
         <button name="submit" type="submit" class="btn btn-success">Add film</button>
     </form>
 </div>

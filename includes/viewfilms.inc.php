@@ -16,11 +16,7 @@ $stmt->execute();
         </button>
         <th scope="col">Picture</th>
         <th scope="col">Titel</th>
-        <th scope="col">Description</th>
-        <th scope="col">Length</th>
-        <th scope="col">Language</th>
-        <th scope="col">Genre</th>
-        <th scope="col">Viewpoint</th>
+        <th scope="col">View</th>
         <th scope="col">Edit</th>
         <th scope="col">Delete</th>
 
@@ -40,11 +36,14 @@ $stmt->execute();
             <tr>
                 <td><img class="picture" src="<?= $row["picture"] ?>" width="200px" height="200px"></td>
                 <td><?= $row["title"] ?></td>
-                <td><?= $row["description"] ?></td>
-                <td><?= $row["length"] ?> Minutes</td>
-                <td><?= $row["language"] ?></td>
-                <td><?= $row["genre"] ?></td>
-                <td><img class="picture" src="<?= $row["viewpoint"] ?>" width="200px" height="200px"></td>
+                <td>
+                    <button class="btn btn-info"
+                            onclick="window.location.href='index.php?page=filmdetails&moviesid=<?= $row["moviesid"] ?>'">
+                        Film Details
+                    </button>
+                </td>
+
+
                 <td>
                     <button class="btn btn-primary"
                             onclick="window.location.href='index.php?page=editfilm&moviesid=<?= $row["moviesid"] ?>'">
