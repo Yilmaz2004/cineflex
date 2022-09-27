@@ -6,7 +6,14 @@ $sql = "SELECT userid, firstname,middlename,lastname,place,street,housenumber,zi
 $stmt = $conn->prepare($sql);
 $stmt->bindParam(':userid', $userid);
 $stmt->execute();
-$row = $stmt->fetch(PDO::FETCH_ASSOC)
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+
+if (isset($_SESSION['melding'])) {
+    echo '<p style = "color:green;">' . $_SESSION['melding'] . '</p>';
+    unset($_SESSION['melding']);
+}
+
 ?>
 <body>
 <div class="container mt-3">
