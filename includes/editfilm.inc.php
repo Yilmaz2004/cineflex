@@ -47,53 +47,46 @@ $result = $stmttest->fetchAll();
         </div>
 
         <?php
-        foreach ($result as $value) {
-        $sql = "SELECT viewpoint
-        FROM viewpoint 
-where viewpointid = :viewpointid and type = 'age'";
-        $stmt2 = $conn->prepare($sql);
-        $stmt2->bindParam(':viewpointid', $value['viewpointid']);
-        $stmt2->execute();
-        while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {?>
 
-<!--            <input type="checkbox" name="userid[]" value="--><?//= $row2['userid'] ?><!--"-->
-<!--                --><?php //while ($row50 = $stmt50->fetch(PDO::FETCH_ASSOC)) {
-//
-//                    echo ($row50['userid'] == $row2['userid']) ? 'checked="checked"' : '';
-//                } ?><!--/>-->
+        $sql = "SELECT viewpointid
+        FROM movieviewpoint 
+        where moviesid = :moviesid";
+        $stmt2 = $conn->prepare($sql);
+        $stmt2->bindParam(':moviesid', $moviesid);
+        $stmt2->execute();
+        while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {
+            ?>
+
             <label class="container">
                 <input type="radio" name="viewpointage" value="<?= $row2["viewpoint"] ?>" >
                 <span class="checkmark"></span>
                 <img  class="picture" src="<?= $row2["viewpoint"] ?>" width="200px" height="200px">
             </label>
 
-        <?php }}
+        <?php }
 
-        $sql = "SELECT viewpointid FROM movieviewpoint where moviesid = :moviesid";
-        $stmt3 = $conn->prepare($sql);
-        $stmt3->bindParam(':moviesid', $moviesid);
-        $stmt3->execute();
-        $result = $stmt3->fetchAll();
-
-
-foreach ($result as $value) {
-    $sql = "SELECT viewpoint FROM viewpoint where viewpointid = :viewpointid and type != 'age'";
-    $stmt4 = $conn->prepare($sql);
-    $stmt4->bindParam(':viewpointid', $value['viewpointid']);
-    $stmt4->execute();
-
-        while ($row4 = $stmt4->fetch(PDO::FETCH_ASSOC)) {?>
-
-            <label class="container" >
-                <input type="checkbox" name="viewpoint[]" value="<?= $row4["viewpoint"] ?>">
-                <span class="checkmark"></span>
-                <img  class="picture" src="<?= $row4["viewpoint"] ?>" width="200px" height="200px">
-            </label>
-
-        <?php }}?>
-
-
-
+//        $sql = "SELECT viewpointid FROM movieviewpoint where moviesid = :moviesid";
+//        $stmt3 = $conn->prepare($sql);
+//        $stmt3->bindParam(':moviesid', $moviesid);
+//        $stmt3->execute();
+//        $result = $stmt3->fetchAll();
+//
+//
+//foreach ($result as $value) {
+//    $sql = "SELECT viewpoint FROM viewpoint where viewpointid = :viewpointid and type != 'age'";
+//    $stmt4 = $conn->prepare($sql);
+//    $stmt4->bindParam(':viewpointid', $value['viewpointid']);
+//    $stmt4->execute();
+//
+//        while ($row4 = $stmt4->fetch(PDO::FETCH_ASSOC)) {?>
+<!---->
+<!--            <label class="container" >-->
+<!--                <input type="checkbox" name="viewpoint[]" value="--><?//= $row4["viewpoint"] ?><!--">-->
+<!--                <span class="checkmark"></span>-->
+<!--                <img  class="picture" src="--><?//= $row4["viewpoint"] ?><!--" width="200px" height="200px">-->
+<!--            </label>-->
+<!---->
+<!--        --><?php //}}?>
 
 
         <input type="hidden" name="moviesid" value="<?= $moviesid ?>">

@@ -18,7 +18,7 @@ if (isset($_SESSION['melding'])) {
     <h3>Login</h3>
     <form method="post" action="PHP/login.php" class="was-validated">
         <div class="mb-3 mt-3">
-            <label for="email" class="form-label">email:</label>
+            <label for="email" class="form-label">Email:</label>
             <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
         </div>
         <div class="mb-3">
@@ -28,7 +28,7 @@ if (isset($_SESSION['melding'])) {
         </div>
         <button type="submit" class="btn btn-outline-dark btn-lg px-5">Login</button>
         <button class="btn btn-outline-dark btn-lg px-5"
-                onclick="window.location.href='index.php?page=register'" type="button">sign up
+                onclick="window.location.href='index.php?page=register'" type="button">Sign up
         </button>
 
     </form>

@@ -28,7 +28,7 @@ $stmt->bindParam(':number', $number);
 $stmt->bindParam(':dob', $dob);
 $stmt->bindParam(':email', $email);
 $stmt->bindParam(':userid', $userid);
-
-
 $stmt->execute();
+
+$_SESSION['melding'] = 'Changes succesfully saved.';
 header('location: ../index.php?page=profile&userid=' . $userid); ?>
