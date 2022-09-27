@@ -6,7 +6,7 @@ if (isset($_SESSION['melding'])) {
 
 <body>
 <div class="container mt-3">
-    <h2>Add A Supervisor</h2>
+    <h2>Add A worker</h2>
     <form action="php/addworker.php" method="POST" enctype="multipart/form-data">
         <div class="mb-3 mt-3">
             <label>Name:</label>
