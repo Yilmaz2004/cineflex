@@ -1,6 +1,5 @@
 <?php
 include '../private/conn.php';
-
 $sql = "SELECT *
         FROM movies
         ";
@@ -28,17 +27,17 @@ $stmt->execute();
 
     if ($stmt->rowCount() > 0) {
 
-        $sql = "SELECT title
+        $sql = "SELECT *
         FROM movies";
         $stmt = $conn->prepare($sql);
         $stmt->execute();
 
 
-        while ($row = $stmt->setFetchMode(PDO::FETCH_CLASS, 'movies')) { ?>
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
             <tbody>
             <tr>
                 <td><img src="data:image/png;base64,<?=$row['picture'] ?>" width="200px" height="200px"></td>
-                <td><?= $row->title?></td>
+                <td><?= $row["title"] ?></td>
                 <td>
                     <button class="btn btn-info"
                             onclick="window.location.href='index.php?page=filmdetails&moviesid=<?= $row["moviesid"] ?>'">
@@ -65,7 +64,3 @@ $stmt->execute();
         <?php }
     } ?>
 </table>
-
-
-
-

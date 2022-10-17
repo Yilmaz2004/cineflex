@@ -1,6 +1,6 @@
 <?php
 
-$sql = "SELECT m.moviesid, m.title,m.genre,c.moviesid,c.date,c.endtime,r.room 
+$sql = "SELECT m.moviesid, m.title,c.moviesid,c.date,c.endtime,r.room 
 FROM movies m 
 left join calendar c on m.moviesid = c.moviesid   
 left join room r on m.moviesid = r.moviesid     
@@ -12,6 +12,7 @@ if (isset($_SESSION['melding'])) {
     echo '<p style = "color:red;">' . $_SESSION['melding'] . '</p>';
     unset($_SESSION['melding']);
 }
+
 
 ?>
 
@@ -26,7 +27,6 @@ if (isset($_SESSION['melding'])) {
             <table class='table table-bordered' >
                 <tr>
                     <th>Title</th>
-                    <th>Genre</th>
                     <th>Room</th>
                     <th>Date</th>
                     <th>End time</th>
@@ -34,11 +34,21 @@ if (isset($_SESSION['melding'])) {
                 </tr>
                 </thead>
                 <?php if ($stmt->rowCount() > 0) {
-                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
+                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+
+
+                        $sql = "SELECT genre from genre";
+                        $stmt = $conn->prepare($sql);
+                        $stmt->execute();
+                        $row2 = $stmt->fetch(PDO::FETCH_ASSOC)
+
+
+
+
+                        ?>
                         <tbody>
                         <tr>
                             <td><?= $row["title"] ?></td>
-                            <td><?= $row["genre"] ?> </td>
                             <td><?= $row["room"] ?></td>
                             <td><?= $row["date"] ?> </td>
                             <td><?= $row["endtime"] ?> </td>
