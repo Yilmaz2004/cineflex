@@ -1,12 +1,19 @@
 <?php
 $moviesid = $_GET['moviesid'];
 
-$sql = "SELECT title, description, language, genre, picture FROM movies
+$sql = "SELECT m.title, m.description, m.languageid, m.picture, l.language
+FROM movies m
+LEFT JOIN language l ON m.languageid = l.languageid
         WHERE moviesid = :moviesid ";
 $stmt = $conn->prepare($sql);
 $stmt->bindParam(':moviesid', $moviesid);
 $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+$sql = "SELECT * FROM language ";
+$stmttest = $conn->prepare($sql);
+$stmttest->execute();
+
 
 $sql = "SELECT viewpointid, viewpoint FROM viewpoint where type = 'age'";
 $stmt2 = $conn->prepare($sql);
@@ -28,7 +35,18 @@ $sql = "SELECT movieviewpointid, viewpointid, moviesid FROM movieviewpoint where
 $stmt5 = $conn->prepare($sql);
 $stmt5->bindParam(':moviesid', $moviesid);
 $stmt5->execute();
-$row5 = $stmt5->fetch(PDO::FETCH_ASSOC)
+$row5 = $stmt5->fetch(PDO::FETCH_ASSOC);
+
+$genreids = array();
+
+$sql = "SELECT * FROM moviesgenre where moviesid = :moviesid";
+$stmttest1 = $conn->prepare($sql);
+$stmttest1->bindParam(':moviesid', $moviesid);
+$stmttest1->execute();
+
+while ($rowtest1 = $stmttest1->fetch(PDO::FETCH_ASSOC)) {
+    array_push($genreids,$rowtest1['genreid']);
+}
 ?>
 
 <body>
@@ -39,32 +57,46 @@ $row5 = $stmt5->fetch(PDO::FETCH_ASSOC)
         <label>Title:</label>
         <input type="text" class="form-control" placeholder="Enter Title" value="<?= $row['title'] ?>" name="title">
     </div>
-    <div class="mb-3 mt-3">
-        <label>Description:</label>
-        <input type="text" class="form-control" placeholder="Enter description" value="<?= $row['description'] ?>"
-               name="description">
-    </div>
+
     <div class="input-group">
         <span class="input-group-text">description</span>
         <textarea class="form-control" name="description" aria-label="With textarea" > <?= $row['description'] ?></textarea>
     </div>
-
-
     <div class="mb-3 mt-3">
         <label>Language:</label>
-        <input type="text" class="form-control" placeholder="Enter language" value="<?= $row['language'] ?>"
-               name="language">
+        <select class="form-control"  class="form-select" name="languageid">
+            <option value="<?= $row["languageid"] ?>"><?= $row["language"] ?></option>
+            <?php while ($rowtest = $stmttest->fetch(PDO::FETCH_ASSOC)) {
+                if($rowtest["languageid"] != $row["languageid"]){ ?>
+                    <option  value="<?= $rowtest["languageid"] ?>"><?= $rowtest["language"] ?></option>
+                <?php } }  ?>
+        </select>
+
+
     </div>
-    <div class="mb-3 mt-3">
-        <label>Genre:</label>
-        <input type="text" class="form-control" placeholder="Enter Genre" value="<?= $row['genre'] ?>" name="genre">
-    </div>
+    <label>Genres:</label>
+    <?php
+    $sql = "SELECT * FROM genre";
+    $stmt6 = $conn->prepare($sql);
+    $stmt6->execute();
+
+
+    while ($row6 = $stmt6->fetch(PDO::FETCH_ASSOC)) {?>
+
+        <label>
+
+            <input type="checkbox" name="genreid[]" value="<?= $row6["genreid"] ?>" <?php if(in_array($row6["genreid"], $genreids)){ ?> checked="checked" <?php } ?>><?= $row6["genre"]?>
+            <span class="checkmark"></span>
+
+        </label>
+
+    <?php }?>
 
     <div class="mb-3 mt-3">
         <label>Picture:</label>
-        <input type="file" class="form-control"  value="<?= $row['picture'] ?>" name="picture" required>
+        <input type="file" class="form-control"  value="<?= $row['picture'] ?>" name="picture" >
     </div>
-    <label>
+    <label >
 
         <input type="radio" name="viewpointage" value="<?= $row2["viewpointid"] ?>" <?php if($row2["viewpointid"] == $row5["viewpointid"]){ ?> checked="checked" <?php } ?>>
 

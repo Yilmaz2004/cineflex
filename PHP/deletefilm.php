@@ -8,5 +8,9 @@ $moviesid = $_GET['moviesid'];
 $stmt = $conn->prepare("DELETE FROM movies WHERE moviesid = :moviesid");
 $stmt->bindParam(':moviesid', $moviesid);
 $stmt->execute();
+
+$stmt = $conn->prepare("DELETE FROM moviesgenre WHERE moviesid = :moviesid");
+$stmt->bindParam(':moviesid', $moviesid);
+$stmt->execute();
 header('location: ../index.php?page=viewfilms');
 ?>

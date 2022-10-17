@@ -2,7 +2,7 @@
 
 <body>
 
-    <h2>Add a film</h2>
+    <h2>Plan a film</h2>
     <form action="php/planfilm.php" method="POST" enctype="multipart/form-data">
 
         <div class="mb-3 mt-3">
@@ -33,10 +33,7 @@
             <input type="time" class="form-control" placeholder="Start time" name="starttime">
         </div>
 
-        <div class="mb-3 mt-3">
-            <label>End time:</label>
-            <input type="time" class="form-control" placeholder="End time" name="endtime">
-        </div>
+
 
 
         <div class="mb-3 mt-3">
