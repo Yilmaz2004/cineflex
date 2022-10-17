@@ -4,59 +4,45 @@ include '../../private/conn.php';
 
 $moviesid = $_POST['moviesid'];
 
+
+
 $title = $_POST['title'];
 $description = $_POST['description'];
-$language = $_POST['language'];
-$genre = $_POST['genre'];
+$languageid = $_POST['languageid'];
 
 
 
-$picture = "picture/" . basename($_FILES["picture"]["name"]);
+$sql = 'SELECT *  FROM movies where moviesid = :moviesid ';
+$stmt = $conn->prepare($sql);
+$stmt->bindParam(':moviesid', $moviesid);
+$stmt->execute();
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
 
-$target_dir = "../picture/";
+if ($_FILES['picture']['tmp_name'] != null){
+    $image = base64_encode(file_get_contents($_FILES['picture']['tmp_name']));
+    $stmt = $conn->prepare("UPDATE movies  SET title = :title, description = :description, languageid = :languageid , picture = :picture WHERE moviesid = :moviesid ");
+    $stmt->bindParam(':title', $title);
+    $stmt->bindParam(':description', $description);
+    $stmt->bindParam(':languageid', $languageid);
+    $stmt->bindParam(':picture', $image);
+    $stmt->bindParam(':moviesid', $moviesid);
+    $stmt->execute();
 
-$target_file = $target_dir . basename($_FILES["picture"]["name"]);
+}
+else{
+    $stmt = $conn->prepare("UPDATE movies  SET title = :title, description = :description, languageid = :languageid, picture = :picture WHERE moviesid = :moviesid ");
+    $stmt->bindParam(':title', $title);
+    $stmt->bindParam(':description', $description);
+    $stmt->bindParam(':languageid', $languageid);
+    $stmt->bindParam(':picture', $row['picture']);
+    $stmt->bindParam(':moviesid', $moviesid);
+    $stmt->execute();
 
-
-$uploadOk = 1;
-$imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-
-
-// Check if image file is a actual image or fake image
-if (isset($_POST["submit"])) {
-    echo $picture . '<br>';
-
-
-    $check = getimagesize($_FILES["picture"]["tmp_name"]);
-
-
-    if ($check !== false ) {
-        echo "File is an image - " . $check["mime"] . ".";
-        $uploadOk = 1;
-    } else {
-        echo "File is not an image.";
-        $uploadOk = 0;
-    }
+}
 
 
-    if ($uploadOk == 0) {
-        echo "Sorry, your file was not uploaded.";
-        // if everything is ok, try to upload file
-    } else {
-        if (move_uploaded_file($_FILES["picture"]["tmp_name"], $target_file)) {
-            echo "The file " . htmlspecialchars(basename($_FILES["picture"]["name"])) . " has been uploaded.";
-
-
-            $stmt = $conn->prepare("UPDATE movies  SET title = :title, description = :description, language = :language, genre = :genre, picture = :picture WHERE moviesid = :moviesid ");
-            $stmt->bindParam(':title', $title);
-            $stmt->bindParam(':description', $description);
-            $stmt->bindParam(':language', $language);
-            $stmt->bindParam(':genre', $genre);
-            $stmt->bindParam(':picture', $picture);
-            $stmt->bindParam(':moviesid', $moviesid);
-            $stmt->execute();
 
             $viewpointage = $_POST['viewpointage'];
 
@@ -73,10 +59,10 @@ echo $viewpointage;
             $stmt = $conn->prepare("DELETE FROM movieviewpoint WHERE moviesid =:moviesid AND viewpointid >= 8  ");
             $stmt->bindParam(':moviesid', $moviesid);
             $stmt->execute();
-            header('location: ../index.php?page=viewfilms');
+
 
             $viewpoint = $_POST['viewpointid'];
-            echo '<pre>', print_r($_POST['viewpointid']), '</pre>';
+//            echo '<pre>', print_r($_POST['viewpointid']), '</pre>';
 
 
             foreach ($viewpoint as $value) {
@@ -89,13 +75,26 @@ echo $viewpointage;
             }
 
 
-        }
-        else {
-            echo "Sorry, there was an error uploading your file.";
-        }
-    }
-}
+            $stmt = $conn->prepare("DELETE FROM moviesgenre WHERE moviesid =:moviesid ");
+            $stmt->bindParam(':moviesid', $moviesid);
+            $stmt->execute();
+
+            $genreid = $_POST['genreid'];
+
+            echo '<pre>', print_r($_POST['genreid']), '</pre>';
+
+            foreach ($genreid as $value1) {
+                $stmt4 = $conn->prepare("INSERT INTO moviesgenre(moviesid,genreid)
+                        VALUES(:moviesid, :genreid)");
+                $stmt4->bindParam(':moviesid', $moviesid);
+                $stmt4->bindParam(':genreid', $value1);
+
+                $stmt4->execute();
+
+            }
 
 
-//header('location: ../index.php?page=viewfilms');
-?><?php
+
+
+header('location: ../index.php?page=viewfilms');
+?>

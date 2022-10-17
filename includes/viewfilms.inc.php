@@ -1,13 +1,13 @@
 <?php
 include '../private/conn.php';
 
-
 $sql = "SELECT *
         FROM movies
         ";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 ?>
+
 <table class="table">
     <thead>
     <tr>
@@ -23,19 +23,22 @@ $stmt->execute();
 
     </tr>
     </thead>
-    <?php if ($stmt->rowCount() > 0) {
+    <?php
 
-        $sql = "SELECT *
+
+    if ($stmt->rowCount() > 0) {
+
+        $sql = "SELECT title
         FROM movies";
         $stmt = $conn->prepare($sql);
         $stmt->execute();
 
 
-        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
+        while ($row = $stmt->setFetchMode(PDO::FETCH_CLASS, 'movies')) { ?>
             <tbody>
             <tr>
-                <td><img class="picture" src="<?= $row["picture"] ?>" width="200px" height="200px"></td>
-                <td><?= $row["title"] ?></td>
+                <td><img src="data:image/png;base64,<?=$row['picture'] ?>" width="200px" height="200px"></td>
+                <td><?= $row->title?></td>
                 <td>
                     <button class="btn btn-info"
                             onclick="window.location.href='index.php?page=filmdetails&moviesid=<?= $row["moviesid"] ?>'">

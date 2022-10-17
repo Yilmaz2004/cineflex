@@ -5,6 +5,7 @@ $sql = "SELECT * FROM viewpoint where type = 'age'";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
 ?>
 
 <body>
@@ -36,20 +37,41 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
         <input type="text" class="form-control" placeholder="Length" name="length">
     </div>
 
-
     <div class="mb-3 mt-3">
         <label>Language:</label>
-        <input type="text" class="form-control" placeholder="Language" name="language">
+    <select class="form-control"  class="form-select" name="languageid">
+        <?php
+        $sql = "SELECT * FROM language";
+        $stmt2 = $conn->prepare($sql);
+        $stmt2->execute();
+
+
+        while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) { ?>
+            <option value="<?= $row2["languageid"] ?>"><?= $row2["language"] ?></option>
+        <?php }  ?>
+    </select>
     </div>
 
 
-    <div class="mb-3 mt-3">
-        <label>Genre:</label>
-        <input type="text" class="form-control" placeholder="Genre" name="genre">
-    </div>
+            <?php
+            $sql = "SELECT * FROM genre";
+            $stmt2 = $conn->prepare($sql);
+            $stmt2->execute();
 
+
+            while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {?>
+
+                <label>
+                    <input type="checkbox" name="genreid[]" value="<?= $row2["genreid"] ?>"><?= $row2["genre"]?>
+                    <span class="checkmark"></span>
+
+                </label>
+
+            <?php }?>
+
+    <br>
     <label>
-        <input type="radio" name="viewpointage" value="<?= $row["viewpoint"] ?>" checked="checked" >
+        <input type="radio" name="viewpointage" value="<?= $row["viewpoint"] ?>" >
         <span class="checkmark"></span>
         <img  class="picture" src="<?= $row["viewpoint"] ?>" width="150px" height="150px">
     </label>
@@ -57,7 +79,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     <?php while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {?>
 
         <label>
-            <input type="radio" name="viewpointage" value="<?= $row["viewpoint"] ?>" checked="checked" >
+            <input type="radio" name="viewpointage" value="<?= $row["viewpoint"] ?>"  >
             <span class="checkmark"></span>
             <img  class="picture" src="<?= $row["viewpoint"] ?>" width="150px" height="150px">
         </label>
