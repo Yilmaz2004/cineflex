@@ -13,5 +13,6 @@ $stmt = $conn->prepare("INSERT INTO movies  (picture,languageid )
 $stmt->bindParam(':picture', $image);
 $stmt->bindParam(':languageid', $languageid);
 $stmt->execute();
+'yes';
 
 
