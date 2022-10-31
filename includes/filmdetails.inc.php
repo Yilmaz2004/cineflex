@@ -5,16 +5,16 @@ include 'PHP/oop.php';
 
 $moviesid = $_GET['moviesid'];
 
-$sql = "SELECT m.picture, m.title, m.description, m.length, l.language, l.languageid,d.dimensionid,d.dimension
-        FROM movies m
-        LEFT JOIN language l on l.languageid = m.languageid
-        LEFT JOIN dimension d on d.dimension = m.dimensionid
-
-where m.moviesid = :moviesid";
-
-$stmt = $conn->prepare($sql);
-$stmt->bindParam(':moviesid', $moviesid);
-$stmt->execute();
+//$sql = "SELECT m.picture, m.title, m.description, m.length, l.language, l.languageid,d.dimensionid,d.dimension
+//        FROM movies m
+//        LEFT JOIN language l on l.languageid = m.languageid
+//        LEFT JOIN dimension d on d.dimension = m.dimensionid
+//
+//where m.moviesid = :moviesid";
+//
+//$stmt = $conn->prepare($sql);
+//$stmt->bindParam(':moviesid', $moviesid);
+//$stmt->execute();
 //$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $sql = "SELECT viewpointid
@@ -59,7 +59,7 @@ $result2 = $stmt3->fetchAll();
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
 
-        $movie = new movies($row['title'], $row['description'], $row['dimension'], $row['length'], $row['language']);
+        $movie = new movies($id = $_GET['moviesid']);
 
         ?>
             <tbody>
