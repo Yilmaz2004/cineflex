@@ -1,5 +1,7 @@
 <?php
 include '../private/conn.php';
+include 'PHP/oop.php';
+
 
 $moviesid = $_GET['moviesid'];
 
@@ -30,55 +32,6 @@ $stmt3 = $conn->prepare($sql);
 $stmt3->bindParam(':moviesid', $moviesid);
 $stmt3->execute();
 $result2 = $stmt3->fetchAll();
-
-
-class movies {
-    public $title;
-    public $description;
-    public $dimension;
-    public $length;
-    public $language;
-
-
-    function __construct($title, $description,$dimension,$length,$language) {
-        $this->title = $title;
-        $this->description = $description;
-        $this->dimension = $dimension;
-        $this->length = $length;
-        $this->language = $language;
-
-    }
-    function get_title() {
-        return $this->title;
-    }
-    function get_description() {
-        return $this->description;
-    }
-    function get_dimension() {
-        return $this->dimension;
-    }
-    function get_length() {
-        return $this->length;
-    }
-    function get_language() {
-        return $this->language;
-    }
-}
-
-//$movie = new movies("Harry Potter", "Eng");
-
-//    echo $movie->get_title();
-//    echo "<br>";
-//    echo $movie->get_description();
-//    echo "<br>";
-//    echo $movie->get_dimension();
-//    echo "<br>";
-//    echo $movie->get_length();
-//    echo "<br>";
-//    echo $movie->get_language();
-
-
-
 ?>
 
 
@@ -104,6 +57,7 @@ class movies {
     <?php
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+
 
         $movie = new movies($row['title'], $row['description'], $row['dimension'], $row['length'], $row['language']);
 
