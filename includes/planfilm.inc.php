@@ -1,7 +1,7 @@
 
 <body>
 
-<h2>Add a film</h2>
+<h2>Plan film</h2>
 <form action="php/planfilm.php" method="POST" enctype="multipart/form-data">
 
     <div class="mb-3 mt-3">
@@ -23,8 +23,6 @@
         <label>Date and time:</label>
         <input type="datetime-local" class="form-control" placeholder="Date" name="date">
     </div>
-
-
 
     <div class="mb-3 mt-3">
         <label>Room:</label><br>

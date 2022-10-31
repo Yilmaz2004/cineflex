@@ -24,10 +24,10 @@ $endtime = date('Y-m-d H:i', strtotime($new_time . '+10 minutes'));
 $sql = "SELECT *  FROM calendar";
 $stmtdate = $conn->prepare($sql);
 $stmtdate->execute();
-$rowdate = $stmtdate->fetchall(PDO::FETCH_ASSOC);
+$rowcalendar = $stmtdate->fetchall(PDO::FETCH_ASSOC);
 
 
-foreach ($rowdate as $datevalue) {
+foreach ($rowcalendar as $datevalue) {
 
     $date_db = new DateTime($datevalue['date']);
     $date_db_tmsp = $date_db->getTimestamp();
@@ -39,45 +39,57 @@ foreach ($rowdate as $datevalue) {
     $date_post_tmsp = $date_post->getTimestamp();
 
 
-    if ($date_post_tmsp >= $date_db_tmsp && $date_post_tmsp <= $endtime_db_tmsp) {
+    $endtime_post = new DateTime($endtime);
+    $endtime_post_tmsp = $endtime_post->getTimestamp();
 
-        $reserved = true;
-        break;
+    if (($date_post_tmsp >= $date_db_tmsp && $date_post_tmsp <= $endtime_db_tmsp) || ($endtime_post_tmsp >= $date_db_tmsp && $endtime_post_tmsp <= $endtime_db_tmsp)) {
+
+
+        if ($_POST['room'] == $datevalue['room']) {
+
+            $reserved = true;
+            break;
+        }
+
+
     }
 }
 
 if ($reserved) {
 
-    $_SESSION['melding'] = 'Time is occupied';
+    $_SESSION['notification'] = 'Time/Room is occupied';
 
 } else {
 
-
-
-    echo 'Tijd niet bezet';
-    $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, date,endtime)
-                    VALUES(:moviesid, :date,:endtime)");
-    $stmtcalendar->bindParam(':moviesid', $moviesid);
-    $stmtcalendar->bindParam(':date', $date);
-    $stmtcalendar->bindParam(':endtime', $endtime);
-    $stmtcalendar->execute();
-
-
     if ($_POST['room'] == 'bigroom') {
 
-        $stmtbigroom = $conn->prepare("INSERT INTO room (room,seats,moviesid)
-                    VALUES(:room,:seats ,:moviesid)");
-        $stmtbigroom->bindParam(':room', $room);
+        $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, date,endtime,room)
+                    VALUES(:moviesid, :date,:endtime,:room)");
+        $stmtcalendar->bindParam(':moviesid', $moviesid);
+        $stmtcalendar->bindParam(':date', $date);
+        $stmtcalendar->bindParam(':endtime', $endtime);
+        $stmtcalendar->bindParam(':room', $room);
+        $stmtcalendar->execute();
+
+        $stmtbigroom = $conn->prepare("INSERT INTO room (seats,moviesid)
+                    VALUES(:seats ,:moviesid)");
         $stmtbigroom->bindParam(':seats', $seatsbig);
         $stmtbigroom->bindParam(':moviesid', $moviesid);
         $stmtbigroom->execute();
 
     } elseif ($_POST['room'] == 'smallroom') {
 
-        $stmtsmallroom = $conn->prepare("INSERT INTO room (moviesid, room,seats)
-                    VALUES(:moviesid,:room,:seats)");
+        $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, date,endtime,room)
+                    VALUES(:moviesid, :date,:endtime, :room)");
+        $stmtcalendar->bindParam(':moviesid', $moviesid);
+        $stmtcalendar->bindParam(':date', $date);
+        $stmtcalendar->bindParam(':endtime', $endtime);
+        $stmtcalendar->bindParam(':room', $room);
+        $stmtcalendar->execute();
+
+        $stmtsmallroom = $conn->prepare("INSERT INTO room (moviesid,seats)
+                    VALUES(:moviesid,:seats)");
         $stmtsmallroom->bindParam(':moviesid', $moviesid);
-        $stmtsmallroom->bindParam(':room', $room);
         $stmtsmallroom->bindParam(':seats', $seatssmall);
         $stmtsmallroom->execute();
     }

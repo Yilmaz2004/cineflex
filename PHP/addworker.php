@@ -27,7 +27,7 @@ if ($stmt->rowCount() == 0) {
     header('location: ../index.php?page=workersview ');
 } else {
 
-    $_SESSION['melding'] = 'This email is not available.';
+    $_SESSION['notification'] = 'This email is not available.';
     header('location: ../index.php?page=addworker ');
 }
 

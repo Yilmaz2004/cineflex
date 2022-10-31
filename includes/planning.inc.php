@@ -1,18 +1,16 @@
 <?php
 
-$sql = "SELECT m.moviesid, m.title,c.moviesid,c.date,c.endtime,r.room 
+$sql = "SELECT m.moviesid, m.title,c.moviesid,c.date,c.endtime,c.room
 FROM movies m 
 left join calendar c on m.moviesid = c.moviesid   
-left join room r on m.moviesid = r.moviesid     
 WHERE status = 'planned'";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 
-if (isset($_SESSION['melding'])) {
-    echo '<p style = "color:red;">' . $_SESSION['melding'] . '</p>';
-    unset($_SESSION['melding']);
+if (isset($_SESSION['notification'])) {
+    echo '<p style = "color:red;">' . $_SESSION['notification'] . '</p>';
+    unset($_SESSION['notification']);
 }
-
 
 ?>
 
@@ -34,18 +32,7 @@ if (isset($_SESSION['melding'])) {
                 </tr>
                 </thead>
                 <?php if ($stmt->rowCount() > 0) {
-                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-
-
-                        $sql = "SELECT genre from genre";
-                        $stmt = $conn->prepare($sql);
-                        $stmt->execute();
-                        $row2 = $stmt->fetch(PDO::FETCH_ASSOC)
-
-
-
-
-                        ?>
+                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
                         <tbody>
                         <tr>
                             <td><?= $row["title"] ?></td>

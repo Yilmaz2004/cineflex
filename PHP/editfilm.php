@@ -5,11 +5,9 @@ include '../../private/conn.php';
 $moviesid = $_POST['moviesid'];
 
 
-
 $title = $_POST['title'];
 $description = $_POST['description'];
 $languageid = $_POST['languageid'];
-
 
 
 $sql = 'SELECT *  FROM movies where moviesid = :moviesid ';
@@ -42,8 +40,6 @@ else{
 
 }
 
-
-
             $viewpointage = $_POST['viewpointage'];
 
 echo $viewpointage;
@@ -52,8 +48,6 @@ echo $viewpointage;
             $stmt3->bindParam(':viewpointid', $viewpointage);
             $stmt3->bindParam(':moviesid', $moviesid);
             $stmt3->execute();
-
-
 
 
             $stmt = $conn->prepare("DELETE FROM movieviewpoint WHERE moviesid =:moviesid AND viewpointid >= 8  ");
@@ -92,9 +86,6 @@ echo $viewpointage;
                 $stmt4->execute();
 
             }
-
-
-
 
 header('location: ../index.php?page=viewfilms');
 ?>

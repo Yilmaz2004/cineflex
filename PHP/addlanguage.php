@@ -22,7 +22,7 @@ if ($stmt->rowCount() == 0) {
     header('location: ../index.php?page=language/languageoverview');
 } else {
 
-    $_SESSION['melding'] = 'This language already exists.';
+    $_SESSION['notification'] = 'This language already exists.';
     header('location: ../index.php?page=language/addlanguage ');
 }
 
