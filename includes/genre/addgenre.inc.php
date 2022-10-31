@@ -1,7 +1,7 @@
 <?php
-if (isset($_SESSION['melding'])) {
-    echo '<p style = "color:red;">' . $_SESSION['melding'] . '</p>';
-    unset($_SESSION['melding']);
+if (isset($_SESSION['notification'])) {
+    echo '<p style = "color:red;">' . $_SESSION['notification'] . '</p>';
+    unset($_SESSION['notification']);
 } ?>
 
 <body>

@@ -17,17 +17,21 @@ $viewpoint = $_POST['viewpoint'];
             $description = $_POST['description'];
             $length = $_POST['length'];
             $languageid = $_POST['languageid'];
+            $dimensionid = $_POST['dimension'];
+
 
             $status = 'notplanned';
 
-            $stmt = $conn->prepare("INSERT INTO movies  (title,description,length,languageid,picture,status)
-                        VALUES(:title, :description,:length,:languageid,:picture,:status)");
+            $stmt = $conn->prepare("INSERT INTO movies  (title,description,length,languageid,dimensionid,picture,status)
+                        VALUES(:title, :description,:length,:languageid,:dimensionid,:picture,:status)");
             $stmt->bindParam(':title', $title);
             $stmt->bindParam(':description', $description);
             $stmt->bindParam(':length', $length);
             $stmt->bindParam(':languageid', $languageid);
             $stmt->bindParam(':picture', $image);
             $stmt->bindParam(':status', $status);
+            $stmt->bindParam(':languageid', $languageid);
+            $stmt->bindParam(':dimensionid', $dimensionid);
             $stmt->execute();
 
             $moviesid = $conn->lastInsertId();

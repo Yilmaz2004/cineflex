@@ -4,12 +4,16 @@ include '../../private/conn.php';
 
 $email = $_POST['email'];
 $password = $_POST['password'];
+$pswhash= hash('sha512', $_POST['password'] );
+
+
 
 $sql = "SELECT role, userid FROM user WHERE email = :email AND password = :password";
 $query = $conn->prepare($sql);
 $query->bindParam(':email', $email);
-$query->bindParam(':password', $password);
+$query->bindParam(':password', $pswhash);
 $query->execute();
+
 if ($query->rowCount() == 1) {
     $result = $query->fetch(PDO::FETCH_ASSOC);
     if ($result['role'] == "worker") {
@@ -27,6 +31,6 @@ if ($query->rowCount() == 1) {
     }
 
 } else {
-    $_SESSION['melding'] = 'Combinatie gebruikersnaam en Wachtwoord onjuist.';
+    $_SESSION['notification'] = 'Combinatie gebruikersnaam en Wachtwoord onjuist.';
     header('location: ../index.php?page=login');
 }

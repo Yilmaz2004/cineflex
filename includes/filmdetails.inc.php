@@ -1,16 +1,21 @@
 <?php
 include '../private/conn.php';
+include 'PHP/oop.php';
+
 
 $moviesid = $_GET['moviesid'];
 
-$sql = "SELECT m.picture, m.title, m.description, m.length, l.language, l.languageid
+$sql = "SELECT m.picture, m.title, m.description, m.length, l.language, l.languageid,d.dimensionid,d.dimension
         FROM movies m
-LEFT JOIN language l on l.languageid = m.languageid
+        LEFT JOIN language l on l.languageid = m.languageid
+        LEFT JOIN dimension d on d.dimension = m.dimensionid
+
 where m.moviesid = :moviesid";
 
 $stmt = $conn->prepare($sql);
 $stmt->bindParam(':moviesid', $moviesid);
 $stmt->execute();
+//$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $sql = "SELECT viewpointid
         FROM movieviewpoint 
@@ -27,12 +32,10 @@ $stmt3 = $conn->prepare($sql);
 $stmt3->bindParam(':moviesid', $moviesid);
 $stmt3->execute();
 $result2 = $stmt3->fetchAll();
-
-
-
-
-
 ?>
+
+
+
 <table class="table">
     <thead>
     <tr>
@@ -41,6 +44,7 @@ $result2 = $stmt3->fetchAll();
         </button>
         <th scope="col">Picture</th>
         <th scope="col">Titel</th>
+        <th scope="col">Dimension</th>
         <th scope="col">Description</th>
         <th scope="col">Length</th>
         <th scope="col">Language</th>
@@ -52,20 +56,26 @@ $result2 = $stmt3->fetchAll();
     </thead>
     <?php
 
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+
+
+        $movie = new movies($row['title'], $row['description'], $row['dimension'], $row['length'], $row['language']);
+
+        ?>
             <tbody>
             <tr>
                 <td><img src="data:image/png;base64,<?= $row['picture'] ?>" width="200px" height="200px"></td>
-                <td><?= $row["title"] ?></td>
-                   <td><textarea class="form-control"  disabled aria-label="With textarea" > <?= $row['description'] ?></textarea></td>
-                <td><?= $row["length"] ?> Minutes</td>
-                <td><?= $row["language"] ?></td>
+                <td><?= $movie->get_title() ?></td>
+                <td><?= $movie->get_dimension() ?></td>
+                <td><textarea class="form-control"  disabled aria-label="With textarea" > <?= $movie->get_description() ?></textarea></td>
+                <td><?= $movie->get_length() ?> Hours</td>
+                <td><?= $movie->get_language() ?></td>
                 <td>
                 <?php
                 foreach ($result2 as $value){
                     $sql = "SELECT genre
-        FROM genre 
-where genreid = :genreid";
+                            FROM genre 
+                            where genreid = :genreid";
                 $stmt4 = $conn->prepare($sql);
                 $stmt4->bindParam(':genreid', $value['genreid']);
                 $stmt4->execute();

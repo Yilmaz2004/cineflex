@@ -34,8 +34,33 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
     <div class="mb-3 mt-3">
         <label>Length:</label>
-        <input type="text" class="form-control" placeholder="Length" name="length">
+        <input type="time"  class="form-control" placeholder="Length" name="length">
     </div>
+
+
+    <div class="mb-3 mt-3">
+        <label>Dimension:</label>
+        <select class="form-control"  class="form-select" name="dimension">
+            <?php
+            $sql = "SELECT * FROM dimension";
+            $stmtdimension = $conn->prepare($sql);
+            $stmtdimension->execute();
+
+
+            while ($rowdimension = $stmtdimension->fetch(PDO::FETCH_ASSOC)) { ?>
+                <option value="<?= $rowdimension["dimensionid"] ?>"><?= $rowdimension["dimension"] ?></option>
+            <?php }  ?>
+        </select>
+    </div>
+
+
+
+
+
+
+
+
+
 
     <div class="mb-3 mt-3">
         <label>Language:</label>

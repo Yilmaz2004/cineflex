@@ -12,7 +12,7 @@ $housenumber = $_POST['housenumber'];
 $number = $_POST['number'];
 $dob = $_POST['dob'];
 $email = $_POST['email'];
-$password = $_POST['password'];
+$password =  hash('sha512', $_POST['password'] );
 $role = 'customer';
 
 
@@ -37,9 +37,5 @@ $_SESSION['userid'] = $conn->lastInsertId();
 $_SESSION['role'] = $role;
 
 header('location: ../index.php?page=homepage');
-
-
-
-
 
 
