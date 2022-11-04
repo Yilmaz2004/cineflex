@@ -54,14 +54,6 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     </div>
 
 
-
-
-
-
-
-
-
-
     <div class="mb-3 mt-3">
         <label>Language:</label>
     <select class="form-control"  class="form-select" name="languageid">

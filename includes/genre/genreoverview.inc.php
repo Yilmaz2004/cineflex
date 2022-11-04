@@ -1,10 +1,6 @@
 <?php
 include '../private/conn.php';
-
-
-$sql = "SELECT * FROM genre";
-$stmt = $conn->prepare($sql);
-$stmt->execute();
+$genre = new genre();
 ?>
 <table class="table">
     <thead>
@@ -19,11 +15,11 @@ $stmt->execute();
 
     </tr>
     </thead>
-    <?php if ($stmt->rowCount() > 0) {
-        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
+
+
             <tbody>
-            <tr>
-                <td><?= $row["genre"] ?></td>
+            <tr><?php var_dump($genre); ?>
+                <td><?=$genre->get_genre() ?></td>
 
                 <td>
                     <button class="btn btn-primary"
@@ -38,8 +34,7 @@ $stmt->execute();
                 </td>
             </tr>
             </tbody>
-        <?php }
-    } ?>
+
 </table>
 
 

@@ -1,6 +1,6 @@
 <?php
 include '../private/conn.php';
-include 'PHP/oop.php';
+include 'PHP/movies.class.php';
 
 
 $moviesid = $_GET['moviesid'];
@@ -15,7 +15,7 @@ where m.moviesid = :moviesid";
 $stmt = $conn->prepare($sql);
 $stmt->bindParam(':moviesid', $moviesid);
 $stmt->execute();
-//$row = $stmt->fetch(PDO::FETCH_ASSOC);
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $sql = "SELECT viewpointid
         FROM movieviewpoint 
@@ -56,10 +56,10 @@ $result2 = $stmt3->fetchAll();
     </thead>
     <?php
 
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
 
-        $movie = new movies($row['title'], $row['description'], $row['dimension'], $row['length'], $row['language']);
+
+        $movie = new movies($id = $_GET['moviesid']);
 
         ?>
             <tbody>
@@ -87,7 +87,7 @@ $result2 = $stmt3->fetchAll();
 
             </tr>
             </tbody>
-        <?php } ?>
+
 </table>
 <?php
 foreach ($result as $value) {

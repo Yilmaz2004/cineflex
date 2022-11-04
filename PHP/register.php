@@ -12,7 +12,7 @@ $housenumber = $_POST['housenumber'];
 $number = $_POST['number'];
 $dob = $_POST['dob'];
 $email = $_POST['email'];
-$password =  hash('sha512', $_POST['password'] );
+$password =  $_POST['password'];
 $role = 'customer';
 
 

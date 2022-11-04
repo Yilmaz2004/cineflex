@@ -4,14 +4,14 @@ include '../../private/conn.php';
 
 $email = $_POST['email'];
 $password = $_POST['password'];
-$pswhash= hash('sha512', $_POST['password'] );
+
 
 
 
 $sql = "SELECT role, userid FROM user WHERE email = :email AND password = :password";
 $query = $conn->prepare($sql);
 $query->bindParam(':email', $email);
-$query->bindParam(':password', $pswhash);
+$query->bindParam(':password', $password);
 $query->execute();
 
 if ($query->rowCount() == 1) {
