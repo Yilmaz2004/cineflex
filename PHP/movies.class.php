@@ -1,5 +1,5 @@
 <?php
-
+include '../private/conn.php';
 class movies {
     public $title;
     public $description;
@@ -8,13 +8,11 @@ class movies {
     public $language;
 
 
-    function __construct($id) {
+    function __construct() {
         $sql = "SELECT m.picture, m.title, m.description, m.length, l.language, l.languageid,d.dimensionid,d.dimension
         FROM movies m
         LEFT JOIN language l on l.languageid = m.languageid
-        LEFT JOIN dimension d on d.dimension = m.dimensionid
-
-        where m.moviesid = $id";
+        LEFT JOIN dimension d on d.dimension = m.dimensionid";
 
         $sql->setFetchMode(PDO::FETCH_CLASS, 'movies');
 

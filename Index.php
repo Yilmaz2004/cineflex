@@ -1,4 +1,6 @@
 <?php
+include 'PHP/movies.class.php';
+include 'PHP/genre.class.php';
 session_start();
 if (isset($_GET['page'])) {
     $page = $_GET['page'];

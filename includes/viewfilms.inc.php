@@ -36,13 +36,13 @@ unset($_SESSION['melding']);}
         FROM movies";
         $stmt = $conn->prepare($sql);
         $stmt->execute();
-
+        $movies = new movies();
 
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
             <tbody>
             <tr>
                 <td><img src="data:image/png;base64,<?=$row['picture'] ?>" width="200px" height="200px"></td>
-                <td><?= $row["title"] ?></td>
+                <td><?= $movies->get_title() ?></td>
                 <td>
                     <button class="btn btn-info"
                             onclick="window.location.href='index.php?page=filmdetails&moviesid=<?= $row["moviesid"] ?>'">

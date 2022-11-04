@@ -1,21 +1,21 @@
 <?php
 include '../private/conn.php';
-include 'PHP/oop.php';
+include 'PHP/movies.class.php';
 
 
 $moviesid = $_GET['moviesid'];
 
-//$sql = "SELECT m.picture, m.title, m.description, m.length, l.language, l.languageid,d.dimensionid,d.dimension
-//        FROM movies m
-//        LEFT JOIN language l on l.languageid = m.languageid
-//        LEFT JOIN dimension d on d.dimension = m.dimensionid
-//
-//where m.moviesid = :moviesid";
-//
-//$stmt = $conn->prepare($sql);
-//$stmt->bindParam(':moviesid', $moviesid);
-//$stmt->execute();
-//$row = $stmt->fetch(PDO::FETCH_ASSOC);
+$sql = "SELECT m.picture, m.title, m.description, m.length, l.language, l.languageid,d.dimensionid,d.dimension
+        FROM movies m
+        LEFT JOIN language l on l.languageid = m.languageid
+        LEFT JOIN dimension d on d.dimension = m.dimensionid
+
+where m.moviesid = :moviesid";
+
+$stmt = $conn->prepare($sql);
+$stmt->bindParam(':moviesid', $moviesid);
+$stmt->execute();
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $sql = "SELECT viewpointid
         FROM movieviewpoint 
@@ -56,7 +56,7 @@ $result2 = $stmt3->fetchAll();
     </thead>
     <?php
 
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+
 
 
         $movie = new movies($id = $_GET['moviesid']);
@@ -87,7 +87,7 @@ $result2 = $stmt3->fetchAll();
 
             </tr>
             </tbody>
-        <?php } ?>
+
 </table>
 <?php
 foreach ($result as $value) {
