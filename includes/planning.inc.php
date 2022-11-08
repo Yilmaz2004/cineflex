@@ -34,7 +34,7 @@ if (isset($_SESSION['notification'])) {
                     <th>Date</th>
                     <th>End time</th>
                     <th>Film details</th>
-                    <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'customer') { ?>
+                    <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'customer' ||  !isset($_SESSION['role'])) { ?>
                         <th>Reserve a seat</th>
                     <?php }
                     if (isset($_SESSION['role']) && $_SESSION['role'] == 'worker') { ?>
@@ -61,7 +61,7 @@ if (isset($_SESSION['notification'])) {
                                 </button>
                             </td>
 
-                            <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'customer') { ?>
+                            <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'customer' || !isset($_SESSION['role'])) { ?>
 
                                 <td>
                                     <button onclick="window.location.href='index.php?page=reserve&moviesid=<?= $row["moviesid"] ?>&room=<?= $row['room'] ?>'">
