@@ -20,16 +20,15 @@ $viewpoint = $_POST['viewpoint'];
             $dimensionid = $_POST['dimension'];
 
 
-            $status = 'notplanned';
+            //$status = 'notplanned';
 
-            $stmt = $conn->prepare("INSERT INTO movies  (title,description,length,languageid,dimensionid,picture,status)
-                        VALUES(:title, :description,:length,:languageid,:dimensionid,:picture,:status)");
+            $stmt = $conn->prepare("INSERT INTO movies  (title,description,length,languageid,dimensionid,picture)
+                        VALUES(:title, :description,:length,:languageid,:dimensionid,:picture)");
             $stmt->bindParam(':title', $title);
             $stmt->bindParam(':description', $description);
             $stmt->bindParam(':length', $length);
             $stmt->bindParam(':languageid', $languageid);
             $stmt->bindParam(':picture', $image);
-            $stmt->bindParam(':status', $status);
             $stmt->bindParam(':languageid', $languageid);
             $stmt->bindParam(':dimensionid', $dimensionid);
             $stmt->execute();

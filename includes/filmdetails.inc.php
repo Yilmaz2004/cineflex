@@ -1,6 +1,6 @@
 <?php
 include '../private/conn.php';
-include 'PHP/movies.class.php';
+
 
 
 $moviesid = $_GET['moviesid'];
@@ -54,22 +54,15 @@ $result2 = $stmt3->fetchAll();
 
     </tr>
     </thead>
-    <?php
 
-
-
-
-        $movie = new movies($id = $_GET['moviesid']);
-
-        ?>
             <tbody>
             <tr>
                 <td><img src="data:image/png;base64,<?= $row['picture'] ?>" width="200px" height="200px"></td>
-                <td><?= $movie->get_title() ?></td>
-                <td><?= $movie->get_dimension() ?></td>
-                <td><textarea class="form-control"  disabled aria-label="With textarea" > <?= $movie->get_description() ?></textarea></td>
-                <td><?= $movie->get_length() ?> Hours</td>
-                <td><?= $movie->get_language() ?></td>
+                <td><?= $row['title'] ?></td>
+                <td><?= $row['dimension'] ?></td>
+                <td><textarea class="form-control"  disabled aria-label="With textarea" > <?= $row['description']?></textarea></td>
+                <td><?= $row['length'] ?> Hours</td>
+                <td><?=$row['language']?></td>
                 <td>
                 <?php
                 foreach ($result2 as $value){
@@ -80,6 +73,7 @@ $result2 = $stmt3->fetchAll();
                 $stmt4->bindParam(':genreid', $value['genreid']);
                 $stmt4->execute();
                     $row4 = $stmt4->fetch(PDO::FETCH_ASSOC)
+
                 ?>
                     <?= $row4["genre"] ?> <?=  '<br/>'?>
                 <?php }?>
@@ -94,13 +88,13 @@ foreach ($result as $value) {
     $sql = "SELECT viewpoint
         FROM viewpoint 
 where viewpointid = :viewpointid";
-    $stmt3 = $conn->prepare($sql);
-    $stmt3->bindParam(':viewpointid', $value['viewpointid']);
-    $stmt3->execute();
+    $stmt5 = $conn->prepare($sql);
+    $stmt5->bindParam(':viewpointid', $value['viewpointid']);
+    $stmt5->execute();
 
 
-while  ($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)) {?>
-    <img  class="picture" src="<?= $row3["viewpoint"] ?>" width="200px" height="200px">
+while  ($row5 = $stmt5->fetch(PDO::FETCH_ASSOC)) {?>
+    <img  class="picture" src="<?= $row5["viewpoint"] ?>" width="200px" height="200px">
 
 <?php }}?>
 
