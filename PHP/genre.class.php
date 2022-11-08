@@ -6,39 +6,24 @@ class genre
     public $genre;
     public $genreid;
 
-    function __construct()
-    {
-    }
 
-    function get_genre($conn)
+
+    function get_genredata($conn)
     {
 
-        $sql = $conn->query("SELECT genre FROM genre");
-        $sql->setFetchMode(PDO::FETCH_CLASS, 'genre');
-        $row = $sql->fetchAll();
-//        echo "<pre>", print_r($row), "</pre>";
-        foreach ($row as $value) {
+        $sql = "SELECT genre, genreid FROM genre";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+    while ($row = $stmt->fetchAll(PDO::FETCH_CLASS, 'genre')) {
 
-
-            $this->genre = $value->genre;
-
-
-            return $this->genre;
+     return $row;
         }
-
     }
-    function get_genreid($conn)
-    {
-
-        $sql = $conn->query("SELECT genreid FROM genre");
-        $sql->setFetchMode(PDO::FETCH_CLASS, 'genre');
-        $row = $sql->fetch();
-//        echo "<pre>", print_r($row), "</pre>";
-        $this->genreid = $row->genreid;
 
 
-        return $this->genreid;
-    }
+
+
+
 }
 
 
