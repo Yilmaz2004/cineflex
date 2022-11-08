@@ -35,7 +35,7 @@ include '../private/conn.php';
             $row2 = $stmt2->fetch(PDO::FETCH_ASSOC); ?>
             <a class="nav-link active" href=index.php?page=viewfilms>Film Overview</a>
             <a class="nav-link active" href=index.php?page=genre/genreoverview>Genre Overview</a>
-            <a class="nav-link active" href=index.php?page=language/languageoverview>Taal Overview</a>
+            <a class="nav-link active" href=index.php?page=language/languageoverview>Language Overview</a>
             <a style="float:right;color: white">Welkom <?= $row['firstname'] ?></a>
             <a onclick="window.location.href='index.php?page=profile&userid=<?= $row2["userid"] ?>'"
                style=" float:right;color: white">Profile</a>
