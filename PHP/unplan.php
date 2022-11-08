@@ -18,20 +18,20 @@ $stmt->execute();
 if($stmt->rowCount() == 0){
 
 
-    $stmtcalendar = $conn->prepare("DELETE FROM calendar WHERE moviesid = :moviesid and starttime = :starttime and endtime = :endtime and room = :room");
+    $stmtcalendar = $conn->prepare("DELETE FROM calendar WHERE moviesid = :moviesid and starttime = :starttime and endtime = :endtime and roomid = :roomid");
     $stmtcalendar->bindParam(':moviesid', $moviesid);
     $stmtcalendar->bindParam(':starttime', $starttime);
     $stmtcalendar->bindParam(':endtime', $endtime);
-    $stmtcalendar->bindParam(':room', $room);
+    $stmtcalendar->bindParam(':roomid', $room);
     $stmtcalendar->execute();
 
 
-    $stmtroom = $conn->prepare("DELETE FROM room WHERE moviesid = :moviesid and starttime = :starttime and endtime = :endtime and room = :room");
-    $stmtroom->bindParam(':moviesid', $moviesid);
-    $stmtroom->bindParam(':starttime', $starttime);
-    $stmtroom->bindParam(':endtime', $endtime);
-    $stmtroom->bindParam(':room', $room);
-    $stmtroom->execute();
+//    $stmtroom = $conn->prepare("DELETE FROM room WHERE moviesid = :moviesid and starttime = :starttime and endtime = :endtime and room = :room");
+//    $stmtroom->bindParam(':moviesid', $moviesid);
+//    $stmtroom->bindParam(':starttime', $starttime);
+//    $stmtroom->bindParam(':endtime', $endtime);
+//    $stmtroom->bindParam(':room', $room);
+//    $stmtroom->execute();
 
 
     header('location: ../index.php?page=planning');

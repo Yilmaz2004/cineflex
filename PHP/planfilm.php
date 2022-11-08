@@ -8,6 +8,8 @@ $room = $_POST['room'];
 $seatsbig = 90;
 $seatssmall = 60;
 $reserved = false;
+$bigroomid= 1;
+$smallroomid= 2;
 
 
 $sql = "SELECT length  FROM movies
@@ -63,41 +65,37 @@ if ($reserved) {
 
     if ($_POST['room'] == 'bigroom') {
 
-        $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, starttime,endtime,room)
-                    VALUES(:moviesid, :starttime,:endtime,:room)");
+        $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, starttime,endtime,roomid)
+                    VALUES(:moviesid, :starttime,:endtime,:roomid)");
         $stmtcalendar->bindParam(':moviesid', $moviesid);
         $stmtcalendar->bindParam(':starttime', $starttime);
         $stmtcalendar->bindParam(':endtime', $endtime);
-        $stmtcalendar->bindParam(':room', $room);
+        $stmtcalendar->bindParam(':roomid', $bigroomid);
         $stmtcalendar->execute();
 
-        $stmtbigroom = $conn->prepare("INSERT INTO room (seats,moviesid,starttime,endtime,room)
-                    VALUES(:seats ,:moviesid,:starttime,:endtime,:room)");
-        $stmtbigroom->bindParam(':seats', $seatsbig);
-        $stmtbigroom->bindParam(':moviesid', $moviesid);
-        $stmtbigroom->bindParam(':starttime', $starttime);
-        $stmtbigroom->bindParam(':endtime', $endtime);
-        $stmtbigroom->bindParam(':room', $room);
-        $stmtbigroom->execute();
+//        $stmtbigroom = $conn->prepare("INSERT INTO room (seats,moviesid,name)
+//                    VALUES(:seats ,:moviesid,:name)");
+//        $stmtbigroom->bindParam(':seats', $seatsbig);
+//        $stmtbigroom->bindParam(':moviesid', $moviesid);
+//        $stmtbigroom->bindParam(':name', $bigroomid);
+//        $stmtbigroom->execute();
 
     } elseif ($_POST['room'] == 'smallroom') {
 
-        $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, starttime,endtime,room)
-                    VALUES(:moviesid, :starttime,:endtime, :room)");
+        $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, starttime,endtime,roomid)
+                    VALUES(:moviesid, :starttime,:endtime, :roomid)");
         $stmtcalendar->bindParam(':moviesid', $moviesid);
         $stmtcalendar->bindParam(':starttime', $starttime);
         $stmtcalendar->bindParam(':endtime', $endtime);
-        $stmtcalendar->bindParam(':room', $room  );
+        $stmtcalendar->bindParam(':roomid', $smallroomid);
         $stmtcalendar->execute();
 
-        $stmtsmallroom = $conn->prepare("INSERT INTO room (moviesid,seats,starttime,endtime,room)
-                    VALUES(:moviesid,:seats,:starttime,:endtime,:room)");
-        $stmtsmallroom->bindParam(':moviesid', $moviesid);
-        $stmtsmallroom->bindParam(':seats', $seatssmall);
-        $stmtsmallroom->bindParam(':starttime', $starttime);
-        $stmtsmallroom->bindParam(':endtime', $endtime);
-        $stmtsmallroom->bindParam(':room', $room);
-        $stmtsmallroom->execute();
+//        $stmtsmallroom = $conn->prepare("INSERT INTO room (moviesid,seats,name)
+//                    VALUES(:moviesid,:seats,:name)");
+//        $stmtsmallroom->bindParam(':moviesid', $moviesid);
+//        $stmtsmallroom->bindParam(':seats', $seatssmall);
+//        $stmtsmallroom->bindParam(':name', $room);
+//        $stmtsmallroom->execute();
     }
 
 }

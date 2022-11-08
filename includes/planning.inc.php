@@ -1,9 +1,10 @@
 <?php
 include '../private/conn.php';
 
-$sql = "SELECT m.moviesid, m.title,c.moviesid,c.starttime,c.endtime,c.room
+$sql = "SELECT m.moviesid, m.title,c.moviesid,c.starttime,c.endtime,r.name,c.roomid
 FROM movies m 
 left join calendar c on m.moviesid = c.moviesid
+left join room r on c.roomid = r.roomid
 
 WHERE m.moviesid = c.moviesid";
 $stmt = $conn->prepare($sql);
@@ -45,14 +46,14 @@ if (isset($_SESSION['notification'])) {
                 <?php if ($stmt->rowCount() > 0) {
                     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
-                        //echo "<pre>", print_r($row), "</pre>";
+
 
 
                         ?>
                         <tbody>
                         <tr>
                             <td><?= $row["title"] ?></td>
-                            <td><?= $row["room"] ?></td>
+                            <td><?= $row["name"] ?></td>
                             <td><?= $row["starttime"] ?> </td>
                             <td><?= $row["endtime"] ?> </td>
                             <td>
@@ -73,7 +74,7 @@ if (isset($_SESSION['notification'])) {
                             if (isset($_SESSION['role']) && $_SESSION['role'] == 'worker') { ?>
                                 <td>
                                     <button class="btn btn-danger"
-                                            onclick=" if(confirm('Are you sure you want to unplan this film?'))window.location.href='php/unplan.php?moviesid=<?= $row["moviesid"] ?> && starttime=<?= $row['starttime'] ?> && endtime=<?= $row['endtime'] ?> && room=<?= $row['room'] ?> '">
+                                            onclick=" if(confirm('Are you sure you want to unplan this film?'))window.location.href='php/unplan.php?moviesid=<?= $row["moviesid"] ?> && starttime=<?= $row['starttime'] ?> && endtime=<?= $row['endtime'] ?> && room=<?= $row['roomid'] ?> '">
                                         Unplan film
                                     </button>
                                 </td>
