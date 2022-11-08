@@ -8,11 +8,9 @@
         <label>Title</label>
         <select name="film">
             <?php
-            $sql = "SELECT moviesid,title FROM movies
-            WHERE status = 'notplanned'";
+            $sql = "SELECT moviesid,title FROM movies";
             $stmt = $conn->prepare($sql);
             $stmt->execute();
-
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
                 <option value="<?= $row['moviesid'] ?>"><?= $row['title'] ?></option>
             <?php } ?>
@@ -21,7 +19,7 @@
 
     <div class="mb-3 mt-3">
         <label>Date and time:</label>
-        <input type="datetime-local" class="form-control" placeholder="Date" name="date">
+        <input type="datetime-local" class="form-control" placeholder="Date" name="starttime">
     </div>
 
     <div class="mb-3 mt-3">
