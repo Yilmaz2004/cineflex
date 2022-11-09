@@ -1,7 +1,7 @@
 <?php
 include '../private/conn.php';
 
-$sql = "SELECT m.moviesid, m.title,c.moviesid,c.starttime,c.endtime,r.name,c.roomid
+$sql = "SELECT m.moviesid, m.title,c.moviesid,c.starttime,c.endtime,r.roomname,c.roomid
 FROM movies m 
 left join calendar c on m.moviesid = c.moviesid
 left join room r on c.roomid = r.roomid
@@ -53,7 +53,7 @@ if (isset($_SESSION['notification'])) {
                         <tbody>
                         <tr>
                             <td><?= $row["title"] ?></td>
-                            <td><?= $row["name"] ?></td>
+                            <td><?= $row["roomname"] ?></td>
                             <td><?= $row["starttime"] ?> </td>
                             <td><?= $row["endtime"] ?> </td>
                             <td>

@@ -8,8 +8,7 @@ $room = $_POST['room'];
 $seatsbig = 90;
 $seatssmall = 60;
 $reserved = false;
-$bigroomid= 1;
-$smallroomid= 2;
+
 
 
 $sql = "SELECT length  FROM movies
@@ -47,7 +46,7 @@ foreach ($rowcalendar as $datevalue) {
     if (($date_post_tmsp >= $date_db_tmsp && $date_post_tmsp <= $endtime_db_tmsp) || ($endtime_post_tmsp >= $date_db_tmsp && $endtime_post_tmsp <= $endtime_db_tmsp)) {
 
 
-        if ($_POST['room'] == $datevalue['room']) {
+        if ($_POST['room'] == $datevalue['roomid']) {
 
             $reserved = true;
             break;
@@ -63,14 +62,14 @@ if ($reserved) {
 
 } else {
 
-    if ($_POST['room'] == 'bigroom') {
+    if ($_POST['room'] == 1) {
 
         $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, starttime,endtime,roomid)
                     VALUES(:moviesid, :starttime,:endtime,:roomid)");
         $stmtcalendar->bindParam(':moviesid', $moviesid);
         $stmtcalendar->bindParam(':starttime', $starttime);
         $stmtcalendar->bindParam(':endtime', $endtime);
-        $stmtcalendar->bindParam(':roomid', $bigroomid);
+        $stmtcalendar->bindParam(':roomid', $room);
         $stmtcalendar->execute();
 
 //        $stmtbigroom = $conn->prepare("INSERT INTO room (seats,moviesid,name)
@@ -80,14 +79,14 @@ if ($reserved) {
 //        $stmtbigroom->bindParam(':name', $bigroomid);
 //        $stmtbigroom->execute();
 
-    } elseif ($_POST['room'] == 'smallroom') {
+    } elseif ($_POST['room'] == 2) {
 
         $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, starttime,endtime,roomid)
                     VALUES(:moviesid, :starttime,:endtime, :roomid)");
         $stmtcalendar->bindParam(':moviesid', $moviesid);
         $stmtcalendar->bindParam(':starttime', $starttime);
         $stmtcalendar->bindParam(':endtime', $endtime);
-        $stmtcalendar->bindParam(':roomid', $smallroomid);
+        $stmtcalendar->bindParam(':roomid', $room);
         $stmtcalendar->execute();
 
 //        $stmtsmallroom = $conn->prepare("INSERT INTO room (moviesid,seats,name)

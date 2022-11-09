@@ -1,4 +1,5 @@
 
+
 <body>
 
 <h2>Plan film</h2>
@@ -24,9 +25,9 @@
 
     <div class="mb-3 mt-3">
         <label>Room:</label><br>
-        <input type="radio" id="html" name="room" value="bigroom">
+        <input type="radio" id="html" name="room" value="1">
         <label for="html">Big room</label><br>
-        <input type="radio" id="css" name="room" value="smallroom">
+        <input type="radio" id="css" name="room" value="2">
         <label for="css">Small room</label><br>
     </div>
 
