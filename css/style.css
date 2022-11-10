@@ -216,9 +216,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 .seat {
     background-color: #444451;
-    height: 40%;
-    width: 8%;
-    margin: 10px;
+    height: 40px;
+    width: 80px; !important;
+
 }
 .seat.selected {
     background-color: green;
@@ -233,42 +233,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
     margin-left: 32px;
 }
 
-.showcase .seat:not(.sold):hover {
-    cursor: default;
-    transform: scale(1);
-}
-.showcase {
-    background: rgba(0, 0, 0, 0.1);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #777;
-    list-style-type: none;
-    display: flex;
-}
-.showcase .seat:not(.sold) :hover {
-    cursor: default;
-    transform: scale(1);
-}
-.showcase {
-    background: rgba(0, 0, 0, 0.1);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #777;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-}
-.showcase li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-}
-.showcase li small {
-    margin-left: 2px;
-}
+
 .row{
     display: flex;
+
 }
 
 p.text{

@@ -1,18 +1,6 @@
 <?php
 include '../private/conn.php';
-$sql = "SELECT *
-        FROM movies
-        ";
-$stmt = $conn->prepare($sql);
-$stmt->execute();
 
-if (isset($_SESSION['melding'])) {
-echo '<p style = "color:red;">' . $_SESSION['melding'] . '</p>';
-unset($_SESSION['melding']);}
-
-?>
-<?php
-include '../private/conn.php';
 
 $sql = "SELECT *
         FROM movies
