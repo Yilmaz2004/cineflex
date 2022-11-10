@@ -13,7 +13,6 @@ $stmt->bindParam(':firstname', $firstname);
 $stmt->bindParam(':email', $email);
 $stmt->bindParam(':password', $password);
 $stmt->bindParam(':userid', $userid);
-
 $stmt->execute();
 header('location: ../index.php?page=workersview');
 ?>

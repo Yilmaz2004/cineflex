@@ -236,7 +236,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .row{
     display: flex;
+    float: left;
 
+}
+.letter{
+    margin: 1px;
+    padding: 1px;
+    width: 10%;
+    float: left;
 }
 
 p.text{

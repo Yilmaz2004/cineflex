@@ -65,7 +65,7 @@ if (isset($_SESSION['notification'])) {
                             <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'customer' || !isset($_SESSION['role'])) { ?>
 
                                 <td>
-                                    <button onclick="window.location.href='index.php?page=reserve&moviesid=<?= $row["moviesid"] ?>&room=<?= $row['room'] ?>'">
+                                    <button onclick="window.location.href='index.php?page=reserve&moviesid=<?= $row["moviesid"] ?>&roomname=<?= $row['roomname'] ?>&& starttime=<?= $row['starttime'] ?> && endtime=<?= $row['endtime'] ?> '">
                                         Reserve
                                     </button>
                                 </td>
