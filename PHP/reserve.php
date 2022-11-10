@@ -35,6 +35,8 @@ if (isset($_POST['seats'])) {
 
 
         }
+
+        // WRM DE FUCK WERKT DEZE QUERY NIETTTTTT ??!?!?!!?!?!?
         echo $roomname;
         $stmt3 = $conn->prepare("UPDATE room SET seats = seats - $count  where roomname = :roomname");
         $stmt3->bindParam(':roomname', $roomname);
