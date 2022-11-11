@@ -47,10 +47,12 @@ include '../private/conn.php';
             $stmt2 = $conn->prepare($sql);
             $stmt2->execute();
             $row2 = $stmt2->fetch(PDO::FETCH_ASSOC); ?>
-            <a style="float:right;color: white">Welkom <?= $row['firstname'] ?></a>
+            <a style="float:right;color: white">Welcome <?= $row['firstname'] ?></a>
             <a onclick="window.location.href='index.php?page=profile&userid=<?= $row2["userid"] ?>'"
                style=" float:right;color: white">Profile</a>
-            <a href="php/logout.php" style="float:right">Log uit</a>
+            <a onclick="window.location.href='index.php?page=reservations&userid=<?= $row2["userid"] ?>'"
+               style=" float:right;color: white">My Reservations</a>
+            <a href="php/logout.php" style="float:right">Log out</a>
         <?php }
     } else { ?>
         <a href=index.php?page=login style="float:right">Log in</a>
