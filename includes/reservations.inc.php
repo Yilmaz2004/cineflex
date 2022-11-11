@@ -25,12 +25,12 @@ $row = $stmt->fetch();
     </tr>
     </thead>
     <?php
-    if ($stmt->rowCount() > 0) {
+
 
 
         $sql = "SELECT *
         FROM movies 
-where moviesid = :moviesid";
+where moviesid = :moviesid ORDER BY moviesid";
         $stmt2 = $conn->prepare($sql);
         $stmt2->bindParam(':moviesid', $row['moviesid']);
         $stmt2->execute();
@@ -48,14 +48,13 @@ where moviesid = :moviesid";
         $sql = "SELECT *
         FROM userreserved 
 where userid = :userid";
-        $stmt2 = $conn->prepare($sql);
-        $stmt2->bindParam(':userid', $userid);
-        $stmt2->execute();
-        $row2 = $stmt2->fetchAll();
+        $stmt3 = $conn->prepare($sql);
+        $stmt3->bindParam(':userid', $userid);
+        $stmt3->execute();
+        $row3 = $stmt3->fetchAll();
 
      ?>
 
-            <td> <?php  foreach ($row2 as $value){ echo $value['seats']; }  ?></td>
 
         </tr>
         </tbody>
@@ -67,4 +66,3 @@ where userid = :userid";
 
 
 
-<?php  }?>
