@@ -62,31 +62,13 @@ if ($reserved) {
 
 } else {
 
-    if ($_POST['room'] == 1) {
-
-        $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, starttime,endtime,roomid,seatsleft)
-                    VALUES(:moviesid, :starttime,:endtime,:roomid,:seatsleft)");
+        $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, starttime,endtime,roomid)
+                    VALUES(:moviesid, :starttime,:endtime,:roomid)");
         $stmtcalendar->bindParam(':moviesid', $moviesid);
         $stmtcalendar->bindParam(':starttime', $starttime);
         $stmtcalendar->bindParam(':endtime', $endtime);
         $stmtcalendar->bindParam(':roomid', $room);
-        $stmtcalendar->bindParam(':seatsleft', $seatsbig);
-
         $stmtcalendar->execute();
-
-
-    } elseif ($_POST['room'] == 2) {
-
-        $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, starttime,endtime,roomid,seatsleft)
-                    VALUES(:moviesid, :starttime,:endtime, :roomid,:seatsleft)");
-        $stmtcalendar->bindParam(':moviesid', $moviesid);
-        $stmtcalendar->bindParam(':starttime', $starttime);
-        $stmtcalendar->bindParam(':endtime', $endtime);
-        $stmtcalendar->bindParam(':roomid', $room);
-        $stmtcalendar->bindParam(':seatsleft', $seatssmall);
-        $stmtcalendar->execute();
-
-    }
 
 }
 

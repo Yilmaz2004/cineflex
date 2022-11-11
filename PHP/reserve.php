@@ -10,11 +10,8 @@ $starttime = $_POST['starttime'];
 $endtime = $_POST['endtime'];
 $roomid = $_POST['roomid'];
 
-echo '<pre>'; print_r($seats); echo '</pre>';
-
 if (isset($_POST['seats'])) {
     $count = count($seats);
-
 
     if ($count >= 6) {
 
@@ -34,29 +31,6 @@ if (isset($_POST['seats'])) {
 
 
         }
-
-
-        echo $roomname;
-        $stmt3 = $conn->prepare("UPDATE room SET seats = seats - :test  where roomid = :roomid");
-        $stmt3->bindParam(':test', $count);
-        $stmt3->bindParam(':roomid', $roomid);
-        $stmt3->execute();
-
-
-
-
-
-
-        $stmt3 = $conn->prepare("UPDATE calendar SET seatsleft = seatsleft - :count  where moviesid = :moviesid and starttime = :starttime and endtime = :endtime and roomid =:roomid");
-        $stmt3->bindParam(':moviesid', $moviesid);
-        $stmt3->bindParam(':starttime', $starttime);
-        $stmt3->bindParam(':endtime', $endtime);
-        $stmt3->bindParam(':count', $count);
-        $stmt3->bindParam(':roomid', $roomid);
-        $stmt3->execute();
-
-
-
     }
 
 } else {

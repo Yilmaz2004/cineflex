@@ -35,7 +35,7 @@ if (isset($_SESSION['notification'])) {
                     <th>Date</th>
                     <th>End time</th>
                     <th>Film details</th>
-                    <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'customer' ||  !isset($_SESSION['role'])) { ?>
+                    <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'customer') { ?>
                         <th>Reserve a seat</th>
                     <?php }
                     if (isset($_SESSION['role']) && $_SESSION['role'] == 'worker') { ?>
@@ -44,12 +44,7 @@ if (isset($_SESSION['notification'])) {
                 </tr>
                 </thead>
                 <?php if ($stmt->rowCount() > 0) {
-                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-
-
-
-
-                        ?>
+                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {?>
                         <tbody>
                         <tr>
                             <td><?= $row["title"] ?></td>
@@ -62,7 +57,7 @@ if (isset($_SESSION['notification'])) {
                                 </button>
                             </td>
 
-                            <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'customer' || !isset($_SESSION['role'])) { ?>
+                            <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'customer' ) { ?>
 
                                 <td>
                                     <button onclick="window.location.href='index.php?page=reserve&moviesid=<?= $row["moviesid"] ?>&roomname=<?= $row['roomname'] ?>&& starttime=<?= $row['starttime'] ?> && endtime=<?= $row['endtime'] ?> &roomid=<?=$row['roomid']?>'">
