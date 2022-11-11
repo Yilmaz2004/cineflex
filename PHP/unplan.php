@@ -1,6 +1,7 @@
 <?php
 session_start();
 include '../../private/conn.php';
+
 $moviesid = $_GET['moviesid'];
 $starttime = $_GET['starttime'];
 $endtime = $_GET['endtime'];

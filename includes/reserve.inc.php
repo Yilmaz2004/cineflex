@@ -4,7 +4,7 @@ $moviesid = $_GET['moviesid'];
 $roomname = $_GET['roomname'];
 $starttime = $_GET['starttime'];
 $endtime = $_GET['endtime'];
-
+$roomid = $_GET['roomid'];
 
 $sql = "SELECT * FROM room WHERE roomname = :roomname ";
 $stmt = $conn->prepare($sql);
@@ -51,6 +51,7 @@ if (isset($_SESSION['notification'])) {
             <input type="hidden" name="starttime" value="<?=$starttime?>">
             <input type="hidden" name="endtime" value="<?=$endtime?>">
 
+            <input type="hidden" name="roomid" value="<?=$roomid?>">
 
         </div>
     </div>
@@ -60,6 +61,7 @@ if (isset($_SESSION['notification'])) {
 <?php }  }
 
 ?>
+
 <button name="submit" type="submit" class="btn btn-success">Reserve seats</button>
 
 </form>

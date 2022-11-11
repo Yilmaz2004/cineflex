@@ -64,37 +64,28 @@ if ($reserved) {
 
     if ($_POST['room'] == 1) {
 
-        $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, starttime,endtime,roomid)
-                    VALUES(:moviesid, :starttime,:endtime,:roomid)");
+        $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, starttime,endtime,roomid,seatsleft)
+                    VALUES(:moviesid, :starttime,:endtime,:roomid,:seatsleft)");
         $stmtcalendar->bindParam(':moviesid', $moviesid);
         $stmtcalendar->bindParam(':starttime', $starttime);
         $stmtcalendar->bindParam(':endtime', $endtime);
         $stmtcalendar->bindParam(':roomid', $room);
+        $stmtcalendar->bindParam(':seatsleft', $seatsbig);
+
         $stmtcalendar->execute();
 
-//        $stmtbigroom = $conn->prepare("INSERT INTO room (seats,moviesid,name)
-//                    VALUES(:seats ,:moviesid,:name)");
-//        $stmtbigroom->bindParam(':seats', $seatsbig);
-//        $stmtbigroom->bindParam(':moviesid', $moviesid);
-//        $stmtbigroom->bindParam(':name', $bigroomid);
-//        $stmtbigroom->execute();
 
     } elseif ($_POST['room'] == 2) {
 
-        $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, starttime,endtime,roomid)
-                    VALUES(:moviesid, :starttime,:endtime, :roomid)");
+        $stmtcalendar = $conn->prepare("INSERT INTO calendar (moviesid, starttime,endtime,roomid,seatsleft)
+                    VALUES(:moviesid, :starttime,:endtime, :roomid,:seatsleft)");
         $stmtcalendar->bindParam(':moviesid', $moviesid);
         $stmtcalendar->bindParam(':starttime', $starttime);
         $stmtcalendar->bindParam(':endtime', $endtime);
         $stmtcalendar->bindParam(':roomid', $room);
+        $stmtcalendar->bindParam(':seatsleft', $seatssmall);
         $stmtcalendar->execute();
 
-//        $stmtsmallroom = $conn->prepare("INSERT INTO room (moviesid,seats,name)
-//                    VALUES(:moviesid,:seats,:name)");
-//        $stmtsmallroom->bindParam(':moviesid', $moviesid);
-//        $stmtsmallroom->bindParam(':seats', $seatssmall);
-//        $stmtsmallroom->bindParam(':name', $room);
-//        $stmtsmallroom->execute();
     }
 
 }

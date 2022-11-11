@@ -65,7 +65,7 @@ if (isset($_SESSION['notification'])) {
                             <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'customer' || !isset($_SESSION['role'])) { ?>
 
                                 <td>
-                                    <button onclick="window.location.href='index.php?page=reserve&moviesid=<?= $row["moviesid"] ?>&roomname=<?= $row['roomname'] ?>&& starttime=<?= $row['starttime'] ?> && endtime=<?= $row['endtime'] ?> '">
+                                    <button onclick="window.location.href='index.php?page=reserve&moviesid=<?= $row["moviesid"] ?>&roomname=<?= $row['roomname'] ?>&& starttime=<?= $row['starttime'] ?> && endtime=<?= $row['endtime'] ?> &roomid=<?=$row['roomid']?>'">
                                         Reserve
                                     </button>
                                 </td>
@@ -74,7 +74,7 @@ if (isset($_SESSION['notification'])) {
                             if (isset($_SESSION['role']) && $_SESSION['role'] == 'worker') { ?>
                                 <td>
                                     <button class="btn btn-danger"
-                                            onclick=" if(confirm('Are you sure you want to unplan this film?'))window.location.href='php/unplan.php?moviesid=<?= $row["moviesid"] ?> && starttime=<?= $row['starttime'] ?> && endtime=<?= $row['endtime'] ?> && room=<?= $row['roomid'] ?> '">
+                                            onclick=" if(confirm('Are you sure you want to unplan this film?'))window.location.href='php/unplan.php?moviesid=<?= $row["moviesid"] ?> & starttime=<?= $row['starttime'] ?> & endtime=<?= $row['endtime'] ?> & room=<?= $row['roomid'] ?> '">
                                         Unplan film
                                     </button>
                                 </td>
