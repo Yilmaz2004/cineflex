@@ -10,6 +10,7 @@ $starttime = $_POST['starttime'];
 $endtime = $_POST['endtime'];
 $roomid = $_POST['roomid'];
 
+echo '<pre>'; print_r($seats); echo '</pre>';
 
 if (isset($_POST['seats'])) {
     $count = count($seats);
@@ -23,13 +24,12 @@ if (isset($_POST['seats'])) {
     } else {
 
         foreach ($seats as $seatid) {
-
-            $stmt2 = $conn->prepare("INSERT INTO userreserved  (userid,moviesid,room,seat)
-                                VALUES(:userid,:moviesid,:room,:seat)");
+            $stmt2 = $conn->prepare("INSERT INTO userreserved  (userid,moviesid,roomid,seats)
+                                VALUES(:userid,:moviesid,:room,:seats)");
             $stmt2->bindParam(':userid', $userid);
             $stmt2->bindParam(':moviesid', $moviesid);
-            $stmt2->bindParam(':room', $roomname);
-            $stmt2->bindParam(':seat', $seatid);
+            $stmt2->bindParam(':room', $roomid);
+            $stmt2->bindParam(':seats', $seatid);
             $stmt2->execute();
 
 
