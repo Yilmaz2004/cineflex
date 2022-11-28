@@ -22,10 +22,6 @@ $stmt3->execute();
 while ($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)) {
     array_push($seats,$row3['seats']);
 }
-
-
-
-
 if (isset($_SESSION['notification'])) {
     echo '<p style = "color:red;">' . $_SESSION['notification'] . '</p>';
     unset($_SESSION['notification']);
@@ -38,19 +34,12 @@ if (isset($_SESSION['notification'])) {
         <div style="float:left">
             <form action="php/reserve.php" method="post">
                 <div class="row">
-
-
                     <div class="seat"  style="color: white"> <?= $seatnumber?> </div>
-
 
                     <input type="checkbox" name="seats[]" value="<?= $seatnumber?>"  <?php if(in_array($seatnumber, $seats)){ ?> checked="checked" disabled <?php } ?>>
 
-
-
                     <input type="hidden" name="roomname" value="<?= $roomname?>  ">
                     <input type="hidden" name="moviesid" value="<?=$moviesid?>">
-
-
 
                     <input type="hidden" name="starttime" value="<?=$starttime?>">
                     <input type="hidden" name="endtime" value="<?=$endtime?>">

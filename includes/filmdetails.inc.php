@@ -39,9 +39,7 @@ $result2 = $stmt3->fetchAll();
 <table class="table">
     <thead>
     <tr>
-        <button style="float:right" class="btn btn-success" onclick="window.location.href='index.php?page=viewfilms'">
-            Back
-        </button>
+        <button style="float:right" class="btn btn-success" onclick="window.location.href='index.php?page=viewfilms'"> Back </button>
         <th scope="col">Picture</th>
         <th scope="col">Titel</th>
         <th scope="col">Dimension</th>
@@ -81,7 +79,6 @@ $result2 = $stmt3->fetchAll();
 
             </tr>
             </tbody>
-
 </table>
 <?php
 foreach ($result as $value) {
